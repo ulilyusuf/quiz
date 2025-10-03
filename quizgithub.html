@@ -58,7 +58,7 @@ fetch(URL_KOSAKATA)
 .then(res => res.text())
 .then(text => {
   bankSoal = text.trim().split("\n").map(row => {
-    const [ko, id] = row.split("=");
+    const [ko, id] = row.split(",");
     return { korea: ko.trim(), indo: id.trim() };
   });
   mulaiSesi();
