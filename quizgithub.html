@@ -58,17 +58,34 @@ let timerInterval = setInterval(() => {
 }, 1000);
 
 // Fungsi untuk menutup quiz dan tampil hasil
-function finishQuiz() {
+//function finishQuiz() {
     // Sembunyikan konten quiz
-    document.getElementById('quizContent').classList.add('disabled');
+    //document.getElementById('quizContent').classList.add('disabled');
+
+    // Tampilkan hasil
+    //document.getElementById('result').style.display = 'block';
+
+    // Tandai quiz sudah selesai agar tidak bisa ulang
+    //localStorage.setItem('quizFinished', 'true');
+//}
+function finishQuiz() {
+    // Hentikan timer
+    clearInterval(timerInterval);
+
+    // Nonaktifkan semua interaksi quiz
+    const quizDiv = document.getElementById('quizContent');
+    quizDiv.classList.add('disabled');
+
+    // Sembunyikan tombol submit jika ada
+    const submitBtn = quizDiv.querySelector('button');
+    if(submitBtn) submitBtn.disabled = true;
 
     // Tampilkan hasil
     document.getElementById('result').style.display = 'block';
 
-    // Tandai quiz sudah selesai agar tidak bisa ulang
+    // Tandai quiz sudah selesai
     localStorage.setItem('quizFinished', 'true');
 }
-
 // Fungsi submit quiz yang sudah ada
 function submitQuiz() {
     clearInterval(timerInterval);
@@ -87,13 +104,6 @@ window.onload = function() {
 <div class="timer" id="timer">Waktu: --:--</div>
 <h2>Quiz Kosakata Korea</h2>
 <div id="quizBox"></div>
-
-<div id="afterSession" class="hidden">
-  <button onclick="nextSesi()">Lanjut Sesi Berikutnya</button>
-  <button onclick="showResult()">Selesai & Lihat Hasil</button>
-</div>
-
-<div id="hasil"></div>
 
 <script>
 // ===== Config =====
@@ -224,6 +234,16 @@ function resetQuiz(){
   mulaiSesi();
 }
 </script>
+.disabled {
+  pointer-events: none;  /* nonaktifkan klik */
+  opacity: 0.6;          /* beri efek visual */
+}
+<div id="afterSession" class="hidden">
+  <button onclick="nextSesi()">Lanjut Sesi Berikutnya</button>
+  <button onclick="showResult()">Selesai & Lihat Hasil</button>
+</div>
+
+<div id="hasil"></div>
   <!-- Hasil saat waktu habis atau selesai -->
 <div id="result" style="display:none;">
   <h2>Waktu Habis / Quiz Selesai!</h2>
