@@ -31,15 +31,21 @@ label {
 </style>
 </style>
 </head>
-  <script>
+ <script>
 // Ambil durasi dari splash screen (dalam menit)
 let duration = parseInt(localStorage.getItem('quizTime') || 0);
-if (duration <= 0) duration = 1;
 
-// Hitung waktu akhir
+// Cek apakah durasi valid
+if (duration <= 0) {
+    // Jika tidak ada durasi valid, redirect ke splash screen
+    alert("Durasi quiz tidak ditemukan. Silakan mulai dari splash screen.");
+    window.location.href = 'index.html'; // ganti dengan URL splash kamu
+}
+
+// Kalau durasi valid, lanjutkan dengan timer seperti biasa
 let endTime = new Date().getTime() + duration * 60 * 1000;
 
-// Update timer per detik
+// Timer update
 let timerInterval = setInterval(() => {
     let now = new Date().getTime();
     let remaining = endTime - now;
@@ -57,6 +63,15 @@ let timerInterval = setInterval(() => {
         `Waktu: ${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
 }, 1000);
 
+// Fungsi finishQuiz() seperti sebelumnya
+function finishQuiz() { ... }
+
+window.onload = function() {
+    if (localStorage.getItem('quizFinished') === 'true') {
+        finishQuiz();
+    }
+}
+</script>
 // Fungsi untuk menutup quiz dan tampil hasil
 //function finishQuiz() {
     // Sembunyikan konten quiz
