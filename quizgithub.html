@@ -29,116 +29,87 @@ label {
 .disabled { pointer-events: none; opacity: 0.6; }
 </style>
 </head>
- <script>
-// Ambil durasi dari splash screen (dalam menit)
-let duration = parseInt(localStorage.getItem('quizTime') || 0);
+<body>
+  <!-- Timer Countdown -->
+  <div class="timer" id="timer">Waktu: --:--</div>
+  <h2>Quiz Kosakata Korea</h2>
+  <div id="quizBox"></div>
 
-// Cek apakah durasi valid
+  <div id="afterSession" class="hidden">
+    <button onclick="nextSesi()">Lanjut Sesi Berikutnya</button>
+    <button onclick="showResult()">Selesai & Lihat Hasil</button>
+  </div>
+
+  <div id="hasil"></div>
+
+  <!-- Hasil saat waktu habis atau selesai -->
+  <div id="result" style="display:none;">
+    <h2>Waktu Habis / Quiz Selesai!</h2>
+    <p>Hasil Anda ditampilkan di sini.</p>
+  </div>
+
+<script>
+// ===== Timer & Session Control =====
+let duration = parseInt(localStorage.getItem('quizTime') || 0);
 if (duration <= 0) {
-    // Jika tidak ada durasi valid, redirect ke splash screen
     alert("Durasi quiz tidak ditemukan. Silakan mulai dari splash screen.");
-    window.location.href = 'index.html'; // ganti dengan URL splash kamu
+    window.location.href = 'index.html'; 
 }
 
-// Kalau durasi valid, lanjutkan dengan timer seperti biasa
 let endTime = new Date().getTime() + duration * 60 * 1000;
-
-// Timer update
 let timerInterval = setInterval(() => {
     let now = new Date().getTime();
     let remaining = endTime - now;
-
     if (remaining <= 0) {
         clearInterval(timerInterval);
         finishQuiz();
         return;
     }
-
     let minutes = Math.floor(remaining / 60000);
     let seconds = Math.floor((remaining % 60000) / 1000);
-
     document.getElementById('timer').textContent =
         `Waktu: ${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
 }, 1000);
 
-// Fungsi finishQuiz() seperti sebelumnya
-function finishQuiz() { ... }
-
-window.onload = function() {
-    if (localStorage.getItem('quizFinished') === 'true') {
-        finishQuiz();
-    }
-}
 function finishQuiz() {
-    // Sembunyikan konten quiz
-    document.getElementById('quizContent').classList.add('disabled');
-
-    // Tampilkan hasil
-    document.getElementById('result').style.display = 'block';
-
-    // Tandai quiz sudah selesai agar tidak bisa ulang
-    localStorage.setItem('quizFinished', 'true');
-}
-function finishQuiz() {
-    // Hentikan timer
     clearInterval(timerInterval);
-
-    // Nonaktifkan semua interaksi quiz
-    const quizDiv = document.getElementById('quizContent');
-    quizDiv.classList.add('disabled');
-
-    // Sembunyikan tombol submit jika ada
-    const submitBtn = quizDiv.querySelector('button');
+    const quizDiv = document.getElementById('quizContent') || document.getElementById('quizBox');
+    if(quizDiv) quizDiv.classList.add('disabled');
+    const submitBtn = quizDiv?.querySelector('button');
     if(submitBtn) submitBtn.disabled = true;
-
-    // Tampilkan hasil
     document.getElementById('result').style.display = 'block';
-
-    // Tandai quiz sudah selesai
     localStorage.setItem('quizFinished', 'true');
 }
-// Fungsi submit quiz yang sudah ada
+
 function submitQuiz() {
     clearInterval(timerInterval);
     finishQuiz();
 }
 
-// Cegah akses jika quiz sudah selesai sebelumnya
 window.onload = function() {
     if (localStorage.getItem('quizFinished') === 'true') {
         finishQuiz();
     }
-}
+};
 
-<body>
-  <!-- Timer Countdown -->
-<div class="timer" id="timer">Waktu: --:--</div>
-<h2>Quiz Kosakata Korea</h2>
-<div id="quizBox"></div>
-
-<script>
 // ===== Config =====
 const URL_KOSAKATA = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv";
-  //https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv
 let bankSoal = [];
 let sesi = 1;
 let maxSesi = 10;
 let soalPerSesi = 10;
-
 let indexSoal = 0;
 let soalAktif = [];
-let jawabanUser = []; // akumulasi semua sesi
+let jawabanUser = [];
 
-// ===== Helpers =====
 function shuffle(arr){ return arr.sort(()=>Math.random()-0.5); }
 
-// ===== Load kosakata dari CSV GitHub =====
+// ===== Load kosakata dari CSV =====
 fetch(URL_KOSAKATA)
 .then(res => res.text())
 .then(text => {
   bankSoal = text.trim().split("\n").map(row => {
-    // Pisah kolom berdasarkan koma
-    const [ko, id] = row.split(","); 
+    const [ko, id] = row.split(",");
     return { korea: ko.trim(), indo: id.trim() };
   });
   mulaiSesi();
@@ -148,7 +119,6 @@ fetch(URL_KOSAKATA)
   console.error(err);
 });
 
-// ===== Quiz Logic =====
 function mulaiSesi() {
   indexSoal = 0;
   soalAktif = shuffle([...bankSoal]).slice(0, Math.min(soalPerSesi, bankSoal.length));
@@ -161,22 +131,18 @@ function mulaiSesi() {
 function tampilSoal() {
   const q = soalAktif[indexSoal];
   const quizBox = document.getElementById("quizBox");
-
   let pilihan = [q.indo];
   while(pilihan.length < 4){
     const salah = bankSoal[Math.floor(Math.random()*bankSoal.length)].indo;
     if(!pilihan.includes(salah)) pilihan.push(salah);
   }
   shuffle(pilihan);
-
   quizBox.innerHTML = `
     <div class="soal">
       <p><b>Soal ${indexSoal+1} dari ${soalPerSesi} (Sesi ${sesi}/${maxSesi})</b></p>
       <p>Apa arti: <b>${q.korea}</b> ?</p>
       ${pilihan.map(p => `
-        <label>
-          <input type="radio" name="jawaban" value="${p}"> ${p}
-        </label>`).join("")}
+        <label><input type="radio" name="jawaban" value="${p}"> ${p}</label>`).join("")}
       <button style="margin-top:20px;" onclick="nextQuestion()">Jawab</button>
     </div>
   `;
@@ -185,13 +151,7 @@ function tampilSoal() {
 function nextQuestion() {
   const pilih = document.querySelector('input[name="jawaban"]:checked');
   if(!pilih){ alert("Pilih jawaban dulu!"); return; }
-
-  jawabanUser.push({
-    sesi: sesi,
-    soal: soalAktif[indexSoal],
-    jawaban: pilih.value
-  });
-
+  jawabanUser.push({ sesi: sesi, soal: soalAktif[indexSoal], jawaban: pilih.value });
   indexSoal++;
   if(indexSoal < soalAktif.length){
     tampilSoal();
@@ -211,29 +171,20 @@ function nextSesi() {
 }
 
 function showResult(){
-  let benar = 0;
-  let review = "";
+  let benar = 0, review = "";
   jawabanUser.forEach((item)=>{
     const status = item.jawaban === item.soal.indo ? "✅" : "❌";
     if(status==="✅") benar++;
     else review += `<p>${status} [Sesi ${item.sesi}] ${item.soal.korea} → Jawaban Anda: <b>${item.jawaban}</b>, Seharusnya: <b>${item.soal.indo}</b></p>`;
   });
-
   document.getElementById("quizBox").innerHTML = "";
   document.getElementById("afterSession").classList.add("hidden");
-
-  let tombolKembali = "";
-  if(sesi < maxSesi){
-    tombolKembali = `<button onclick="nextSesi()">⬅ Kembali ke Sesi ${sesi+1}</button>`;
-  }
-
   document.getElementById("hasil").innerHTML = `
     <h3>Hasil Akhir</h3>
     <p>Total Benar: ${benar} / ${jawabanUser.length}</p>
     <h4>Review Jawaban Salah:</h4>
     ${review || "<p>Tidak ada yang salah 🎉</p>"}
     <div style="margin-top:20px;">
-      ${tombolKembali}
       <button onclick="resetQuiz()">🔄 Awal</button>
     </div>
   `;
@@ -242,20 +193,9 @@ function showResult(){
 function resetQuiz(){
   sesi = 1;
   jawabanUser = [];
+  localStorage.removeItem('quizFinished');
   mulaiSesi();
 }
 </script>
-
-<div id="afterSession" class="hidden">
-  <button onclick="nextSesi()">Lanjut Sesi Berikutnya</button>
-  <button onclick="showResult()">Selesai & Lihat Hasil</button>
-</div>
-
-<div id="hasil"></div>
-  <!-- Hasil saat waktu habis atau selesai -->
-<div id="result" style="display:none;">
-  <h2>Waktu Habis / Quiz Selesai!</h2>
-  <p>Hasil Anda ditampilkan di sini.</p>
-</div>
 </body>
 </html>
