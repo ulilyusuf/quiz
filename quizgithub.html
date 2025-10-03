@@ -73,15 +73,15 @@ window.onload = function() {
 }
 </script>
 // Fungsi untuk menutup quiz dan tampil hasil
-//function finishQuiz() {
+function finishQuiz() {
     // Sembunyikan konten quiz
-    //document.getElementById('quizContent').classList.add('disabled');
+    document.getElementById('quizContent').classList.add('disabled');
 
     // Tampilkan hasil
-    //document.getElementById('result').style.display = 'block';
+    document.getElementById('result').style.display = 'block';
 
     // Tandai quiz sudah selesai agar tidak bisa ulang
-    //localStorage.setItem('quizFinished', 'true');
+    localStorage.setItem('quizFinished', 'true');
 //}
 function finishQuiz() {
     // Hentikan timer
