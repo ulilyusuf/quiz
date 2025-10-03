@@ -2,170 +2,78 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Quiz Kosakata Korea</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz</title>
 <style>
-body { 
-  font-family: Arial, sans-serif; 
-  padding: 20px; 
-  font-size: 22px; 
-  line-height: 1.6; 
-}
-.soal { margin-bottom: 30px; }
-button { 
-  padding: 15px 25px; 
-  font-size: 20px; 
-  margin-top: 15px; 
-  margin-right: 10px; 
-}
-label { 
-  display: block; 
-  margin-bottom: 15px; 
-  font-size: 20px; 
-}
-#hasil { margin-top: 30px; font-size: 20px; }
-.hidden { display:none; }
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  .timer { font-size: 1.5rem; font-weight: bold; margin-bottom: 20px; color: red; }
+  .quiz-question { margin-bottom: 15px; }
+  .disabled { pointer-events: none; opacity: 0.6; }
 </style>
 </head>
 <body>
-<h2>Quiz Kosakata Korea</h2>
-<div id="quizBox"></div>
 
-<div id="afterSession" class="hidden">
-  <button onclick="nextSesi()">Lanjut Sesi Berikutnya</button>
-  <button onclick="showResult()">Selesai & Lihat Hasil</button>
+<div class="timer" id="timer">Waktu: --:--</div>
+
+<div id="quizContent">
+  <div class="quiz-question">1. Pertanyaan contoh A</div>
+  <div class="quiz-question">2. Pertanyaan contoh B</div>
+  <div class="quiz-question">3. Pertanyaan contoh C</div>
+  <button onclick="submitQuiz()">Kirim Jawaban</button>
 </div>
 
-<div id="hasil"></div>
+<div id="result" style="display:none;">
+  <h2>Waktu Habis / Quiz Selesai!</h2>
+  <p>Hasil Anda ditampilkan di sini.</p>
+</div>
 
 <script>
-// ===== Config =====
-const URL_KOSAKATA = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv";
-  //https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv
-let bankSoal = [];
-let sesi = 1;
-let maxSesi = 10;
-let soalPerSesi = 10;
+// Ambil durasi dari localStorage (dalam menit)
+let duration = parseInt(localStorage.getItem('quizTime') || 0);
+if (duration <= 0) duration = 1;
 
-let indexSoal = 0;
-let soalAktif = [];
-let jawabanUser = []; // akumulasi semua sesi
+// Hitung deadline
+let endTime = new Date().getTime() + duration * 60 * 1000;
 
-// ===== Helpers =====
-function shuffle(arr){ return arr.sort(()=>Math.random()-0.5); }
+// Timer update per detik
+let timerInterval = setInterval(() => {
+    let now = new Date().getTime();
+    let remaining = endTime - now;
 
-// ===== Load kosakata dari CSV GitHub =====
-fetch(URL_KOSAKATA)
-.then(res => res.text())
-.then(text => {
-  bankSoal = text.trim().split("\n").map(row => {
-    // Pisah kolom berdasarkan koma
-    const [ko, id] = row.split(","); 
-    return { korea: ko.trim(), indo: id.trim() };
-  });
-  mulaiSesi();
-})
-.catch(err => {
-  document.getElementById("quizBox").innerHTML = "<p style='color:red'>Gagal memuat kosakata</p>";
-  console.error(err);
-});
+    if (remaining <= 0) {
+        clearInterval(timerInterval);
+        finishQuiz();
+        return;
+    }
 
-// ===== Quiz Logic =====
-function mulaiSesi() {
-  indexSoal = 0;
-  soalAktif = shuffle([...bankSoal]).slice(0, Math.min(soalPerSesi, bankSoal.length));
-  document.getElementById("quizBox").innerHTML = "";
-  document.getElementById("afterSession").classList.add("hidden");
-  document.getElementById("hasil").innerHTML = "";
-  tampilSoal();
+    let minutes = Math.floor(remaining / 60000);
+    let seconds = Math.floor((remaining % 60000) / 1000);
+
+    document.getElementById('timer').textContent = 
+        `Waktu: ${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
+}, 1000);
+
+function submitQuiz() {
+    clearInterval(timerInterval);
+    finishQuiz();
 }
 
-function tampilSoal() {
-  const q = soalAktif[indexSoal];
-  const quizBox = document.getElementById("quizBox");
+function finishQuiz() {
+    // Tampilkan hasil
+    document.getElementById('quizContent').style.display = 'none';
+    document.getElementById('result').style.display = 'block';
 
-  let pilihan = [q.indo];
-  while(pilihan.length < 4){
-    const salah = bankSoal[Math.floor(Math.random()*bankSoal.length)].indo;
-    if(!pilihan.includes(salah)) pilihan.push(salah);
-  }
-  shuffle(pilihan);
-
-  quizBox.innerHTML = `
-    <div class="soal">
-      <p><b>Soal ${indexSoal+1} dari ${soalPerSesi} (Sesi ${sesi}/${maxSesi})</b></p>
-      <p>Apa arti: <b>${q.korea}</b> ?</p>
-      ${pilihan.map(p => `
-        <label>
-          <input type="radio" name="jawaban" value="${p}"> ${p}
-        </label>`).join("")}
-      <button style="margin-top:20px;" onclick="nextQuestion()">Jawab</button>
-    </div>
-  `;
+    // Tandai quiz selesai agar tidak bisa lanjut sesi lain
+    localStorage.setItem('quizFinished', 'true');
 }
 
-function nextQuestion() {
-  const pilih = document.querySelector('input[name="jawaban"]:checked');
-  if(!pilih){ alert("Pilih jawaban dulu!"); return; }
-
-  jawabanUser.push({
-    sesi: sesi,
-    soal: soalAktif[indexSoal],
-    jawaban: pilih.value
-  });
-
-  indexSoal++;
-  if(indexSoal < soalAktif.length){
-    tampilSoal();
-  } else {
-    document.getElementById("quizBox").innerHTML = `<p>Sesi ${sesi} selesai!</p>`;
-    document.getElementById("afterSession").classList.remove("hidden");
-  }
-}
-
-function nextSesi() {
-  if(sesi < maxSesi){
-    sesi++;
-    mulaiSesi();
-  } else {
-    showResult();
-  }
-}
-
-function showResult(){
-  let benar = 0;
-  let review = "";
-  jawabanUser.forEach((item)=>{
-    const status = item.jawaban === item.soal.indo ? "✅" : "❌";
-    if(status==="✅") benar++;
-    else review += `<p>${status} [Sesi ${item.sesi}] ${item.soal.korea} → Jawaban Anda: <b>${item.jawaban}</b>, Seharusnya: <b>${item.soal.indo}</b></p>`;
-  });
-
-  document.getElementById("quizBox").innerHTML = "";
-  document.getElementById("afterSession").classList.add("hidden");
-
-  let tombolKembali = "";
-  if(sesi < maxSesi){
-    tombolKembali = `<button onclick="nextSesi()">⬅ Kembali ke Sesi ${sesi+1}</button>`;
-  }
-
-  document.getElementById("hasil").innerHTML = `
-    <h3>Hasil Akhir</h3>
-    <p>Total Benar: ${benar} / ${jawabanUser.length}</p>
-    <h4>Review Jawaban Salah:</h4>
-    ${review || "<p>Tidak ada yang salah 🎉</p>"}
-    <div style="margin-top:20px;">
-      ${tombolKembali}
-      <button onclick="resetQuiz()">🔄 Awal</button>
-    </div>
-  `;
-}
-
-function resetQuiz(){
-  sesi = 1;
-  jawabanUser = [];
-  mulaiSesi();
+// Cegah akses ke quiz jika sudah habis sesi sebelumnya
+window.onload = function() {
+    if (localStorage.getItem('quizFinished') === 'true') {
+        finishQuiz();
+    }
 }
 </script>
+
 </body>
 </html>
