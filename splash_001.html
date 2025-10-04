@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splash Screen Kuis</title>
+<style>
+  /* Reset dan font */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Container utama */
+  .splash-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+  }
+
+  /* Heading */
+  .splash-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  /* Deskripsi */
+  .splash-container p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+
+  /* Input waktu */
+  .time-input {
+    width: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Tombol mulai */
+  .start-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .start-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Animasi fadeIn */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  /* Responsive untuk layar kecil */
+  @media (max-width: 400px) {
+    .splash-container {
+      padding: 30px 20px;
+    }
+    .splash-container h1 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="splash-container">
+  <h1>Selamat Datang!</h1>
+  <p>Atur durasi kuis dalam satu sesi (menit). Masukkan angka saja.</p>
+  <input type="number" id="timeInput" class="time-input" min="1" placeholder="Contoh: 30">
+  <br>
+  <button class="start-btn" onclick="startQuiz()">Mulai Kuis</button>
+</div>
+
+<script>
+function startQuiz() {
+    const time = document.getElementById('timeInput').value;
+    if (time === "" || time <= 0) {
+        alert("Silakan masukkan waktu yang valid (angka > 0)!");
+        return;
+    }
+    // Simpan durasi (dalam menit) di localStorage
+    localStorage.setItem('quizTime', time);
+
+    // Mulai sesi hanya sekali per user, simpan status
+    localStorage.setItem('quizStarted', 'true');
+
+    // Arahkan ke quiz.html di GitHub Pages
+    window.location.href = 'https://ulilyusuf.github.io/quiz/quizgithub.html';
+}
+let duration = parseInt(localStorage.getItem('quizTime') || 0);
+if(duration <= 0) {
+    alert("Durasi quiz tidak ditemukan. Silakan mulai dari splash screen.");
+    // bisa redirect kembali ke splash
+    window.location.href = 'index.html';
+}
+</script>
+
+//<script>
+//function startQuiz() {
+    const time = document.getElementById('timeInput').value;
+    if (time === "" || time <= 0) {
+        alert("Silakan masukkan waktu yang valid (angka > 0)!");
+        return;
+    }
+    // Simpan waktu untuk digunakan di halaman soal
+    localStorage.setItem('quizTime', time);
+
+    // Alihkan ke halaman soal (ganti 'quiz.html' sesuai projectmu)
+    window.location.href = 'https://ulilyusuf.github.io/quiz/quizgithub.html';
+}
+</script>
+
+</body>
+</html>
