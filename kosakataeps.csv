@@ -2020,7 +2020,7 @@
 부럽다,Iri
 편하다,Nyaman
 더,Lebih
-잘되다,Baik, Lancar
+잘되다,Baik/Lancar
 상사,Atasan
 부하,Bawahan
 사이가 나쁘다,Hubungan buruk
@@ -2047,14 +2047,13 @@
 화가 나다,Marah
 화를 내다,Mengomel
 싸움을 하다,Berkelahi
-오해를 풀다,Mengklarifikasi, menyelesaikan salah paham
 주문,Pesanan
 늘다,Meningkat
 이제,Sekarang
 구내식당,Kantin
 잘못이에요,Bersalah
 직책,Jabatan
-호칭,Panggilan, Julukan
+호칭,Panggilan/Julukan
 예를 들면,Mengambil contoh
 부르다,Memanggil
 비슷하다,Mirip
@@ -2089,9 +2088,9 @@
 후회하다,Menyesal
 따로,Secara terpisah
 잔소리를 하다,Mengomel
-말대꾸 하다/ 말대답 하다,Menyanggah (menjawab dengan menyangkal)
-꿈밤을 맞다,Memukul kepala (menjitak)
-괴롭히다,Menyiksa, menyakiti (membully)
+말대꾸 하다,Menyanggah
+꿈밤을 맞다,Memukul kepala
+괴롭히다,Menyiksa/menyakiti/membully
 멱살을 잡다,Memegang krah baju
 발길질을 하다,Menendang kaki
 주먹질을 하다,Menonjok dengan kepalan tangan
@@ -2125,7 +2124,7 @@
 차에 가다,Pergi ke sesi kedua
 건배하다,Bersulang
 단합 대회,Acara penyambutan
-열심히,Rajin, Giat
+열심히,Rajin/Giat
 승진하다,Naik pangkat
 소개하다,Memperkenalkan
 환영하다,Menyambut
@@ -2144,8 +2143,6 @@
 야유회,Acara piknik
 체육대회,Acara kompetisi olahraga
 걱정 말다,Jangan khawatir
-아직,Masih, belum
-새로,Baru
 두껍다,Tebal
 담다,Mengisi
 겸,Dalam rangka
@@ -2166,11 +2163,11 @@
 알리다,Mengetahui
 양해,Pengertian
 구하다,Meminta
-가볍다,Ringan, lembut
+가볍다,Ringan/lembut
 대다,Menyentuh
 따르다,Menuangkan
 반대쪽,Arah sebaliknya
-고개,Tengkuk, leher
+고개,Tengkuk/leher
 관람하다,Memperlihatkan
 도모하다,Merencanakan
 유도하다,Beralasan
@@ -3684,6 +3681,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
