@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.5">
 <title>Quiz Kosakata Korea</title>
 <style>
-body { font-family: sans-serif; background: #fffaf0; padding: 20px; }
-.question { margin-bottom: 20px; }
-button { padding: 10px 15px; border-radius: 8px; margin-top: 10px; }
-#timer { font-weight: bold; color: red; }
+body {
+  font-family: sans-serif;
+  background: #fffaf0;
+  padding: 20px;
+  font-size: 22px; /* 🔹 ukuran huruf utama */
+}
+
+.question { margin-bottom: 25px; }
+
+button {
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 20px; /* 🔹 ukuran huruf tombol */
+}
+
+#timer {
+  font-weight: bold;
+  color: red;
+  font-size: 22px; /* 🔹 ukuran tulisan waktu */
+}
 </style>
 </head>
 <body>
@@ -48,7 +65,7 @@ function acak(arr){ return arr.sort(() => Math.random() - 0.5); }
 function buatSoal(){
   soal = acak([...kosakata]).slice(0,10).map(item => {
     let opsi = [item.arti];
-    while(opsi.length < 3){
+    while(opsi.length < 4){
       let rand = kosakata[Math.floor(Math.random()*kosakata.length)].arti;
       if(!opsi.includes(rand)) opsi.push(rand);
     }
@@ -90,21 +107,56 @@ function timer(){
   }, 1000);
 }
 
-function selesai(){
+function tampilSoal(){
+  if(index >= soal.length){
+    // Jika semua soal sudah dijawab
+    document.getElementById('quiz').innerHTML = `
+      <h3>🎉 Sesi ${sesi} selesai!</h3>
+      <p>Skor sementara: ${skor} / ${soal.length}</p>
+      <button onclick="lanjutSesi()">➡️ Lanjut Sesi ${sesi+1}</button><br>
+      <button onclick="lihatHasil()">📊 Selesai dan Lihat Hasil</button>
+    `;
+    return;
+  }
+
+  let s = soal[index];
+  document.getElementById('quiz').innerHTML = `
+    <div class='question'>
+      <p>${index+1}. Apa arti dari <b>${s.q}</b>?</p>
+      ${s.opsi.map(o=>`<button onclick="jawab('${o}')">${o}</button>`).join("<br>")}
+    </div>
+  `;
+}
+
+function jawab(pilihan){
+  let s = soal[index];
+  if(pilihan === s.correct){
+    skor++;
+  } else {
+    jawabanSalah.push({no:index+1, soal:s.q, jawaban:s.correct});
+  }
+  index++;
+  tampilSoal();
+}
+
+function lanjutSesi(){
   localStorage.setItem('skor_sesi_'+sesi, skor);
   localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah));
 
   if(sesi < 10){
-    let lanjut = confirm("Sesi selesai. Lanjut ke sesi berikutnya?");
-    if(lanjut){
-      localStorage.setItem('sesi', sesi+1);
-      window.location.reload();
-    } else {
-      window.location.href = "https://github.com/ulilyusuf/quiz/result.html";
-    }
+    localStorage.setItem('sesi', sesi+1);
+    window.location.reload(); // mulai sesi berikutnya
   } else {
-    window.location.href = "https://github.com/ulilyusuf/quiz/result.html";
+    alert("Semua 10 sesi sudah selesai!");
+    window.location.href = "result.html";
   }
+}
+
+function lihatHasil(){
+  // Simpan hasil terakhir dulu
+  localStorage.setItem('skor_sesi_'+sesi, skor);
+  localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah));
+  window.location.href = "result.html";
 }
 
 loadCSV();
