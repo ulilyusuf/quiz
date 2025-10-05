@@ -2891,12 +2891,13 @@
 남다,Tersisa
 충전하다,Mengisi ulang
 당하다,Menderita
-,
 보호구,Alat keamanan
 모두,Semua
 착용하다,Memakai
 안전모,Helm pengaman
-쓰다, 끼다, 신다,Memakai
+쓰다,memakai
+끼다,memakai
+신다,Memakai
 안전장갑,Sarung tangan pengaman
 끈,Tali
 조이다,Mengencangkan
@@ -2917,14 +2918,17 @@
 빼다,Melepas
 얼른,Secepatnya
 파편이 튀다,Terkena serpihan besi
-부딪하다, 출동하다,Tabrakan
+부딪하다,Tabrakan
+출동하다,Dikerahkan
 넘어지다,Jatuh
 미끄러지다,Terpeleset
-떨어지다, 추락하다,Jatuh dari ketinggian
+떨어지다,Jatuh
+추락하다,Jatuh dari ketinggian
 구덩이에 빠지다,Jatuh ke lubang
 맞다,Terkena
 감전되다,Kesetrum
-가스가 새다, 누출되다,Kebocoran gas
+가스가 새다,Kebocoran gas
+누출되다,Kebocoran gas
 폭발하다,Meledak
 불이 나다,Kebakaran
 주의하다,Waspada
@@ -2933,7 +2937,7 @@
 빛,Sinar
 호흡기,Alat pernafasan
 분진,Debu
-물체,Benda, barang
+물체,Benda/barang
 전신,Seluruh tubuh
 방사선,Radiasi
 날카롭다,Tajam
@@ -2959,7 +2963,6 @@
 발등,Sepatu pengaman ujung Kaki
 화학물질,Zat kimia
 산소 결핍증,Kekurangan nafas
-,
 근로자의 날,Hari buruh
 기념하다,Memperingati
 우수 사원,Karyawan berprestasi
@@ -2979,7 +2982,7 @@
 정기적,Teratur
 안색,Raut wajah
 야근하다,Lembur
-틈틈히,Sesekali, berkala
+틈틈히,Sesekali/berkala
 입맛,Nafsu makan
 챙기다,Menjaga
 해치다,Merusak
@@ -3688,6 +3691,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
