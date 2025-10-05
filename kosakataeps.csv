@@ -2788,7 +2788,7 @@
 모든,Semua
 파손되다,Rusak
 지난번,Sebelumnya
-생각,Pikiran, ingatan
+생각,Pikiran/ingatan
 제대,Standar
 결심하다,Memutuskan/menentukan
 실천하다,Menerapkan
@@ -2798,19 +2798,20 @@
 구멍을 뚫다,Melubangi
 원목,Papan kayu (Sirap)
 익다,Terbiasa
-속상하다,Jengkel, Kesal
+속상하다,Jengkel/Kesal
 재단,Mengukur
-금방,Segera, baru saja
+금방,Segera/baru saja
 재단하다,Mengukur
 홈,Alur
-연마하다, 샌딩하다,Menghaluskan
+연마하다,Menghaluskan
+샌딩하다,Menghaluskan
 사포질하다,Mengamplas
 도장하다,Melapisi
 도색하다,Mengecat
 줄자,Meteran
 직각자,Penggaris siku
 수평대,Pengukur kedataran
-칭찬,Penghargaan, pujian
+칭찬,Penghargaan/pujian
 기타,Dan lain-lain
 존경하다,Kerja yang bagus
 주문,Pesanan
@@ -2818,10 +2819,9 @@
 가공하다,Melubangi
 덕분에,Berkat
 잊다,Lupa
-착하다,Baik hati, Ramah
+착하다,Baik hati/Ramah
 건강하다,Sehat
 연락하다,Menghubungi
-,
 모서리,Pinggiran
 맞추다,Meratakan
 뻔하다,Hampir
@@ -2831,7 +2831,7 @@
 기계,Mesin
 워낙,Sangat
 무겁다,Berat
-방심,Ceroboh, payah
+방심,Ceroboh/payah
 사고가 나다,Kecelakaan
 집중하다,Fokus
 특히,Khusus
@@ -2839,17 +2839,17 @@
 구부리다,Membengkokan
 찍어 내다,Mencetak
 선반 기계,Mesin Bubut
-갈다,Mengasah, Menghaluskan
+갈다,Mengasah/Menghaluskan
 도려내다,Memotong
 파내다,Memahat
-밀링 기계,Mesin Penggilingan, Mesin Milling
+밀링 기계,Mesin Penggilingan/Mesin Milling
 깎다,Memangkas
 절단하다,Memotong
 불꽃을 튀다,Percikan api
 움직이다,Bergerak
 가만히 있다,Diam
 얼음,Es Batu
-진정 시키다,Membius, Mengompres
+진정 시키다,Membius/Mengompres
 손가락이 잘리다,Jarinya terpotong
 끼이다,Terjepit
 베이다,Tergores
@@ -2882,7 +2882,7 @@
 손잡이,Pegangan
 강하게 움켜쥐다,Menggenggam dengan Kuat
 바람,Angin
-방향 접근하다,Arah, Mendekat
+방향 접근하다,Arah/Mendekat
 아래로,Bawah
 소화,Api
 소화하다,Memadamkan
@@ -3688,6 +3688,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
