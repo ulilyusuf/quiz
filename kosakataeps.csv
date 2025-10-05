@@ -370,7 +370,8 @@
 병원,Rumah sakit
 약국,Apotik
 위,Atas
-아래, 밎,Bawah
+아래,Bawah
+밎,Bawah
 앞,Depan
 뒤,Belakang
 안,Dalam
@@ -3676,6 +3677,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
