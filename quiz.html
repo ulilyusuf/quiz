@@ -111,10 +111,15 @@ function timer(){
 function tampilSoal(){
   if(index >= soal.length){
     // Jika semua soal sudah dijawab
+    let tombolLanjut = "";
+    if(sesi < 10){
+      tombolLanjut = `<button onclick="lanjutSesi()">➡️ Lanjut Sesi ${sesi+1}</button><br>`;
+    }
+
     document.getElementById('quiz').innerHTML = `
       <h3>🎉 Sesi ${sesi} selesai!</h3>
       <p>Skor sementara: ${skor} / ${soal.length}</p>
-      <button onclick="lanjutSesi()">➡️ Lanjut Sesi ${sesi+1}</button><br>
+      ${tombolLanjut}
       <button onclick="lihatHasil()">📊 Selesai dan Lihat Hasil</button>
     `;
     return;
