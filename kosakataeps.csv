@@ -2214,7 +2214,7 @@
 행동,Tindakan
 감정,Perasaan
 생기다,Muncul
-분명하다,Jelas, Nyata
+분명하다,Jelas/Nyata
 표현하다,Mengekspresikan
 성폭력,Kekerasan seksual
 당하다,Mengalami
@@ -2224,7 +2224,7 @@
 증거,Bukti
 확보하다,Menjamin
 피해자,Korban
-가해자,Tersangka, Penganiaya
+가해자,Tersangka
 사실,Fakta
 반드시,Harus
 기억하다,Mengingat
@@ -2232,7 +2232,7 @@
 의사,Kehendak
 신고하다,Melapor
 강요하다,Memaksa
-요구하다,Meminta, menuntut
+요구하다,Meminta/menuntut
 불이익을 주다,Merugikan
 일찍,Awal
 개인적인,Diri sendiri
@@ -2245,7 +2245,7 @@
 언어,Perkataan
 유발하다,Memicu
 따라서,Oleh karena itu
-이상,Lebih dari, Di atas
+이상,Lebih dari/Di atas
 사회문자,Masalah sosial
 판단하다,Menganggap
 기준,Standar
@@ -2253,15 +2253,15 @@
 차별하다,Diskriminasi
 에를 들어,Contohnya
 싫다, 쳐다,Benci
-정확하다,Tepat, akurat
+정확하다,Tepat/akurat
 실제로,Sebenarnya
 원하다,Ingin
 상황,Kondisi
-거부,Menyanggah, menolak
-명시적인,Spesifik, eksplisit
+거부,Menyanggah/menolak
+명시적인,Spesifik/eksplisit
 의사 표현,Ekspresi kehendak
 처벌,Hukuman
-개념,Konsep, Gagasan
+개념,Konsep/Gagasan
 사업주,Pemilik perusahaan
 상급자,Atasan
 근로자,Pekerja
@@ -2272,7 +2272,7 @@
 혐오감,Rasa Tidak Suka
 느끼다,Merasa
 요구,Permintaan
-발음,Pengucapan, Pelafalan
+발음,Pengucapan/Pelafalan
 이유,Alasan
 고용상,Pekerjaan
 남녀고용평등법,Hukum Persamaan gender
@@ -2282,7 +2282,7 @@
 결과,Akibat
 실시,Pemberlakuan
 조치,Tindakan
-분쟁,Pertikaian, bentrok
+분쟁,Pertikaian/bentrok
 자율적,Mandiri
 징계,Hukuman
 구제,Rehabilitasi
@@ -2291,7 +2291,7 @@
 견책,Teguran
 정직,Skorsing
 감봉,Potong gaji
-해고,Pemberhentian, pecat
+해고,Pemberhentian/pecat
 행정적,Administratif
 책임,Tanggung jawab
 민사,Perdata
@@ -2299,7 +2299,7 @@
 비난,Celaan
 명예 손상,Pencemaran nama baik
 성적 언동,Perbuatan Senonoh
-해당하다,Relevan, tepat
+해당하다,Relevan/tepat
 경범죄,Perbuatan Kurang Baik
 교통 위반,Pelanggaran lalu lintas
 불법 체류,Tinggal secara ilegal
@@ -2329,7 +2329,7 @@
 못,Paku
 볼트,Baut
 너트,Mur
-금방,Baru saja, beberapa saat
+금방,Baru saja/beberapa saat
 구멍,Lubang
 벽,Tembok
 일찍,Lebih awal
@@ -2357,7 +2357,7 @@
 핸드카,Alat pengangkut
 전선 릴,Rol kabel
 올리다,Menaikan
-포장,Pengemasan, pembungkusan
+포장,Pengemasan/pembungkusan
 무겁다,Berat
 운반하다,Memindahkan
 절곡기,Alat pemotong
@@ -2378,7 +2378,7 @@
 커터기,Pemotong Solasi
 철근 절단기,Mesin Pemotong Besi
 철근 절곡기,Mesin Pembengkok Besi
-흙손,Sedok semen, sekop, Trowel
+흙손,Sedok semen/sekop/Trowel
 노루발못 뽑이,Penyukit
 착유기,Mesin pemerah susu
 끌개, 헤라,Kepi, Susruk
@@ -2414,7 +2414,7 @@
 접다,Melipat
 상자,Kotak
 완성하다,Menyelesaikan
-충분하다,Tersedia, cukup
+충분하다,Tersedia/cukup
 남다,Tersisa
 주문하다,Memesan
 도착하다,Tiba
@@ -2431,7 +2431,7 @@
 소풍을 가다,Piknik
 준비하다,Menyiapkan
 수공구,Alat
-확실하다,Mantap, tepat
+확실하다,Mantap/tepat
 작업물,Material
 정확하다,Akurat
 장착,Menggunakan
@@ -2459,7 +2459,8 @@
 거푸집,Cetakan
 반석,Pondasi
 설치하다,Merangkai
-철근 조립하다,Besi, Merakit
+조립하다,Merakit
+철근,Besi
 저희,Kita
 먼저,Terlebih dahulu
 옮기다,Memindahkan
@@ -2504,18 +2505,19 @@
 움직이다,Menggerakan
 크레인(기중기),Mesin Derek
 무겁다,Berat
-수평,Horisontal, Arah Datar
+수평,Horisontal/Arah Datar
 이동시키다,Memindah
 화물차 (트럭),Truk pengangkut
 화물,Muatan
 실어 나르다,Mengangkut
 굴착기,Alat pengeruk
-땅, 암석,Tanah, Batuan
+땅,Tanah
+암석,Batuan
 따위,Sejenis
 파내다,Menggali
 처리하다,Mengatur
 불도저,Buldozer
-흙,Gundukan, tanah liat
+흙,Tanah liat
 밀다,Mendorong
 다지다,Mengeraskan
 지면,Permukaan
@@ -2528,7 +2530,7 @@
 자갈,Kerikil
 모래,Pasir
 석탄,Batubara
-그레이더,Grader, Perata
+그레이더,Gerinda
 땅바닥,Permukaan tanah
 깎다,Meratakan
 레미콘,Truk pengaduk semen
@@ -2537,8 +2539,8 @@
 개씩,Setiap
 건축 폐자재,Pendaur ulang limbah konstruksi
 소각장,Tempat pembakaran sampah
-퇴비사,-
-석면,-
+퇴비사,Kompos
+석면,Asbes
 썩다,Basi/busuk
 페인트,Cat
 냄새,Bau
@@ -2558,7 +2560,7 @@
 잘 되어 있다,Tertata rapi
 심하다,Parah
 소음,Suara
-쾌적하다,Damai, tenang
+쾌적하다,Damai/tenang
 버리다,Membuang
 환기하다,Membuka ventilasi
 열다,Membuka
@@ -2581,11 +2583,11 @@
 손수레,Troli
 일륜차,Gerobak sorong
 사다리,Tangga
-마대,Karung, Goni
+마대,Karung/Goni
 바구니,Keranjang
 비닐 끈,Tali plastik
 실내 공기,Udara dalam ruang
-동네,Desa, Kompleks
+동네,Desa/Kompleks
 강물,Air sungai
 환경,Lingkungan
 낭비,Boros
@@ -3681,6 +3683,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
