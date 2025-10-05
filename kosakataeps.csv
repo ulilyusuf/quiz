@@ -2619,12 +2619,12 @@
 떨어지다,Jatuh
 밀폐 공간,Menyegel ruangan
 전체 환기장치,Penyegaran udara menyeluruh
-국소 배기장치,Sistem pembuangan gas/udara sebagian
-괭이,Pangkur, Cangkul
+국소 배기장치,Sistem pembuangan udara
+괭이,Pangkur
 챙기다,Menyiapkan
 고구마,Ubi
 캐다,Mencabut
-호미,Cangkul, Skop
+호미,Cangkul
 밭,Ladang
 딱딱하다,Keras
 상처가 나다,Muncul luka
@@ -2647,7 +2647,7 @@
 경운기,Traktor
 콤바인,Alat pemanen
 옮기다,Memindah
-고생,Susah, Menderita, Sukar, Sulit
+고생,Susah/Menderita/Sukar/Sulit
 비료,Pupuk
 뿌리다,Menyebar
 준비,Persiapan
@@ -2660,8 +2660,11 @@
 보리,Barli, Jawawut
 밀,Gandum
 콩,Kacang
-키우다, 기르다, 재배하다,Memelihara
-거두다, 수확하다,Memanen
+키우다,Memelihara/membesarkan
+기르다,Menumbuhkan
+재배하다,Membudidaya tanaman
+거두다,Memanen/meraih
+수확하다,Memanen tanaman
 따다,Memetik
 씨앗,Bibit
 거름,Pupuk kompos
@@ -2690,10 +2693,9 @@
 여러 가지,Berbagai macam
 재배하다,Membudidayakan
 잔디밭,Rumput
-쑥갓을 (기르다 /키우다),memelihara/merawat tanaman yang berbau harum yang biasanya dimakan mentah (lalap)
-지시,Perintah, petunjuk
-신경 쓰다,Memikirkan, memperhatikan
-바꾸다,Menukar, mengganti
+지시,Perintah/petunjuk
+신경 쓰다,Memikirkan/memperhatikan
+바꾸다,Menukar/mengganti
 사료,Pakan
 소,Sapi
 한테,Kepada
@@ -2724,8 +2726,8 @@
 몇 번,Beberapa kali
 어디 좀 봐,Coba saya lihat
 단단히,Dengan Kuat
-혼을 내다,Memberi teguran, memarahi
-엉키다,Terlilit, Kusut, Kacau
+혼을 내다,Memberi teguran/memarahi
+엉키다,Terlilit/Kusut/Kacau
 다시,Lagi
 제때,Tepat waktu
 갈다,Mengganti
@@ -2739,15 +2741,16 @@
 도르래,Katrol
 뜰채,Jaring kecil
 낚시 바늘,Mata pancing
-부자, 부표,Pelampung
+부자/부표,Pelampung
 바늘대,Jarum sulam
 수중 펌프,Pompa selam
 수경,Kacamata renang
-갈퀴,Penggaruk, Garu
+갈퀴,Penggaruk/Garu
 스티로품 상자,Sterofoam
 지나다,Melewati
 고장나다,Rusak
-수리하다, 고치다,Memperbaiki
+수리하다,memperbaiki
+고치다,Memperbaiki
 축산업,Industri peternakan
 배합기,Mesin Pencampur pakan
 투입하다,Memasukan
@@ -2763,7 +2766,6 @@
 조개,Kerang
 낚지,Cumi-cumi
 굴,Tiram
-기르다,Memelihara, Membudidayakan
 염전,Ladang Garam
 생산하다,Memproduksi
 소금,Garam
@@ -2778,7 +2780,8 @@
 냉동,Pendingin
 컨테이너,Kontainer
 입고하다,Menyetok
-보관하다, 저장하다,Menyimpan
+보관하다,menyimpan
+저장하다,Menyimpan
 덮개를 덮다,Menutup dengan penutup
 온도를 유지하다,Menjaga suhu
 관리하다,Mengelola
@@ -2787,7 +2790,7 @@
 지난번,Sebelumnya
 생각,Pikiran, ingatan
 제대,Standar
-결심하다,Memutuskan, menentukan
+결심하다,Memutuskan/menentukan
 실천하다,Menerapkan
 성공하다,Sukses
 실수,Kesalahan
@@ -3685,6 +3688,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
