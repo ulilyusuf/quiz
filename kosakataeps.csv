@@ -1303,16 +1303,16 @@
 아프고 열이 많이 나요,Sakit dan panas tinggi
 알레르기,Alergi
 앓다,Sakit
--일분,Unit, Volume
--포,Tablet, Dosis
--회,Waktu, Kali, Babak
+-일분,Unit/Volume
+-포,Tablet/Dosis
+-회,Waktu/Kali/Babak
 가정,Keluarga
 약을 짓다,Meracik obat
 약품,Obat-obatan
 어지럽다,Pusing
 건강음료,Minuman kesehatan
 근육통,Nyeri otot
-나오다,Keluar, muncul
+나오다,Keluar/muncul
 내복약,Obat dalam
 눈에 뭐가 나다,Kelilipan
 눈이 뻑뻑하다,Mata kering
@@ -1383,7 +1383,7 @@
 휴진,Libur (klinik tutup)
 공휴일,Libur nasional
 통장,Buku tabungan
-저금,Celengan, tabungan
+저금,Celengan/tabungan
 신분증,Kartu identitas
 여권,Paspor
 신청서,Formulir pendaftaran
@@ -1414,7 +1414,7 @@
 제공하다,Menyediakan
 근로자,Pekerja
 바꾸다,Menukar
-별로,Hampir, tidak terlalu
+별로,Hampir/tidak terlalu
 전용,Khusus
 금융,Perbankan
 월급,Gaji
@@ -1422,15 +1422,15 @@
 지역,Daerah
 설치하다,Memperlengkapi / memasang
 또한,Selain itu
-실시하다,Menjalankan, melaksanakan
-영업,Bisnis, dagang
+실시하다,Menjalankan/melaksanakan
+영업,Bisnis/dagang
 환전,Menukar uang
 대출,Peminjaman
-할부,Cicilan (utang, kredit)
-일시불,Kontan, pembayaran penuh sekaligus
+할부,Cicilan (utang/kredit)
+일시불,Kontan/pembayaran penuh sekaligus
 엽서,Kartu pos
 보내다,Mengirim
-올려놓다,Meletakkan, menaikkan
+올려놓다,Meletakkan/menaikkan
 우편번호,Kode pos
 쓰다,Menulis
 편지,Surat
@@ -1445,7 +1445,7 @@
 배편,Pengiriman via kapal
 항공편,Pengiriman via pesawat
 열흘,10 hari
-급하다,Darurat, mendesak
+급하다,Darurat/mendesak
 국제 특급,Paket kilat internasional
 무게를 재다,Menimbang
 일반 우편,Pengiriman biasa
@@ -1454,13 +1454,13 @@
 주소,Alamat
 서류,Dokumen
 전하다,Menyampaikan
-배달하다,Mengantar, mengirim
+배달하다,Mengantar/mengirim
 발송하다,Mengirim
 연결되다,Terhubung
-여부,Status, kepastian
+여부,Status/kepastian
 조회하다,Mengecek
 결과,Hasil
-현재,Saat ini, sekarang
+현재,Saat ini/sekarang
 가능하다,Memungkinkan
 물품,Barang
 한약,Obat herbal
@@ -1479,18 +1479,18 @@
 운송장,Surat jalan / tanda pengiriman
 외국인력지원센터,Pusat Bantuan Pekerja Asing
 배우다,Belajar
-수업,Pelajaran, kelas
+수업,Pelajaran/kelas
 전혀,Sama sekali (tidak)
 상담,Konsultasi
 교육,Pendidikan
 법률 교육,Pendidikan hukum
 안전,Keamanan
-기획하다,Merencanakan, menggelar
+기획하다,Merencanakan/menggelar
 국가별,Internasional / multi-nasional
 여러 가지,Berbagai macam
 광고,Iklan
 무료,Gratis
-기관,Lembaga, institusi
+기관,Lembaga/institusi
 국악,Musik tradisional
 금융,Finansial
 영양,Nutrisi
@@ -1521,20 +1521,20 @@
 상담사,Konsultan
 방문하다,Mengunjungi
 미리,Terlebih dahulu
-현황,Kondisi, situasi
-소개,Pengenalan, perkenalan
-고충,Masalah, kesulitan
+현황,Kondisi/situasi
+소개,Pengenalan/perkenalan
+고충,Masalah/kesulitan
 다양하다,Beragam
-이루어지다,Tercapai, terwujud
+이루어지다,Tercapai/terwujud
 홈페이지,Halaman utama / website
 여러 가지,Beberapa macam
--뿐만 아니라,Bukan hanya itu, tapi juga
+-뿐만 아니라,Bukan hanya itu-tapi juga
 고충 상담,Layanan konsultasi masalah
 국가별,Multi-nasional
 행사,Acara
 체험,Pengalaman
 기획하다,Menggelar
-신기하다,Kaget, heran
+신기하다,Kaget/heran
 처음,Pertama kali
 일 년 내내,Sepanjang tahun
 최저기온,Suhu terendah
@@ -1578,14 +1578,14 @@
 광역시,Kota metropolitan
 함께,Bersama
 수도권,Metropolitan / Daerah Ibu Kota
-도,Provinsi, Pulau
+도,Provinsi/Pulau
 절반,Setengah bagian
 중부 지방,Wilayah tengah
 남부 지방,Wilayah selatan
 신라의 수도였던,Ibu kota zaman kerajaan Silla
 세계 문화유산,Warisan budaya dunia
 지정되다,Ditetapkan
-독특하다,Khas, unik
+독특하다,Khas/unik
 자연환경,Lingkungan alam
 간직하다,Menyimpan
 국제 자유,Bebas secara internasional
@@ -1598,7 +1598,7 @@
 연평균,Rata-rata tahunan
 섬,Pulau / kepulauan
 따뜻하다,Hangat
-이때,Saat ini, waktu ini
+이때,Saat ini/waktu ini
 아름답다,Indah
 관광객,Turis
 꼭,Harus
@@ -3690,6 +3690,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
