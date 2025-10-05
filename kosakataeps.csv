@@ -3014,7 +3014,6 @@
 상체,Dagu
 밀다,Mendorong
 대강당,Aula
-,
 제조업,Manufaktur
 쪽,Arah
 잘됐네요,Ide yang bagus
@@ -3057,7 +3056,7 @@
 냉동창고업,Pekerjaan gudang penyimpanan
 재쟁용 재료수집 및 판매업,Pengumpulan dan penjualan benda daur ulang
 신문공고,Iklan koran
-참고하다,Merujuk, Mengacu
+참고하다,Merujuk/Mengacu
 구하다,Mencari
 인력난,Ketenagakerjaan
 겪다,Mengalami
@@ -3069,7 +3068,6 @@
 작성,Mengisi
 송부,Mengirim
 표준근로계약,Kontrak kerja
-,
 체결하다,Menandatangani
 사전취업교육,Tes Prelim
 사업자뱅치,Hadir di Lokasi kerja
@@ -3077,7 +3075,8 @@
 선발과정,Pilihan
 공정성.특정성,Jujur dan terbuka
 조기 적응 유도,Pengendalian adaptasi lebih awal
-이상 ,이하,Atas, Bawah
+이상,Atas
+이하,Bawah
 금고형,Penjara
 범죄 경령,Pelanggaran hukum
 과거,Masa lalu
@@ -3091,7 +3090,6 @@
 순으로,Menurut
 합격유효기간,Masa aktif sertifikat
 발표일,Tanggal pengumuman
-,
 근로조건,Kondisi kerja
 궁금하다,Penasaran
 연장 근무,Kerja tambahan
@@ -3112,13 +3110,14 @@
 근무지,Lokasi kerja
 정하다,Menentukan
 일단,Saat itu
-알려 주다,Mengajari, memberi tahu
+알려 주다,Mengajari/memberi tahu
 면접을 보다,Wawancara kerja
 사업주,Pemilik perusahaan
 취업자,Pekerja
 고용하다,Mempekerjakan
 취업하다,Bekerja
-사인하다, 서명하다,Menandatangani
+사인하다,Menandatangani
+서명하다,Menandatangani
 근무하다,Bekerja
 업체 명,Nama perusahaan
 퇴직하다,Berhenti kerja
@@ -3129,12 +3128,12 @@
 업종,Jenis pekerjaan
 작업내용,Detail Pekerjaan
 직무내용,Tugas
-표준근로계약서,Surat kontrak kerja standar (SLC)
+표준근로계약서,SLC
 관한,Tentang
 예방하다,Mencegah
 권익,Hak
 보호하다,Melindungi
-위하다,Untuk, Bagi
+위하다,Untuk
 서식,Format
 상호,Saling
 담다,Membahas
@@ -3143,10 +3142,10 @@
 설정하다,Mengatur
 대로,Menurut
 기재하다,Berdasarkan
-생략,Menyingkat, Menyesuaikan
+생략,Menyingkat/Menyesuaikan
 최저임금,Gaji pokok (UMR)
-높다,Naik, tinggi
-항목,Detail, Mengenai
+높다,Tinggi
+항목,Detail/Mengenai
 제공하다,Menyediakan
 비용,Biaya
 부담하다,Menanggung
@@ -3160,10 +3159,9 @@
 가지고 있다,Membawa
 작성하다,Membuat
 지급하다,Membagikan
-,
 입국 신고서,Surat laporan masuk
 예정,Keputusan
-증, 비자,Visa
+비자,Visa
 유효 기간,Masa kadaluarsa
 발급,Penerbitan
 통역,Penerjemahan
@@ -3186,7 +3184,7 @@
 수수료,Biaya
 만료되다,Kadaluarsa
 갱신하다,Memperbarui
-사실,Kenyataan, fakta, Sebenarnya
+사실,Kenyataan/fakta
 사본,Fotocopy
 번호표를 뽑다,Mengambil nomor antrian
 지문을 등록하다,Mendaftarkan sidik jari
@@ -3691,6 +3689,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
