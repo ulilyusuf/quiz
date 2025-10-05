@@ -18,7 +18,7 @@ li { text-align: left; }
 <div id="salah"></div>
 
 <button onclick="ulang()">🔄 Mulai dari awal</button>
-<button onclick="keluar()">❌ Exit</button>
+/<button onclick="keluar()">❌ Exit</button>
 
 <script>
 let total = 0;
@@ -37,9 +37,6 @@ document.getElementById('salah').innerHTML = `<ul>${list}</ul>`;
 function ulang(){
   localStorage.clear();
   window.location.href = "index.html";
-}
-function keluar(){
-  window.location.href = "exitapp://close";
 }
 </script>
 
