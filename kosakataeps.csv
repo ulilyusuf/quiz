@@ -1019,7 +1019,8 @@
 음료수,Minuman ringan
 선물하다,Menghadiahi
 좋아하다,Menyukai
-잡수시다, 드시다,Makan atau minum (sopan)
+잡수시다,Makan
+드시다,Makan atau minum (sopan)
 주무시다,Tidur (sopan)
 잠을 자다,Tidur
 말씀하시다,Berkata (sopan)
@@ -1061,14 +1062,14 @@
 나이,Umur
 실례되다,Kasar
 마치다,Menyelesaikan
-일어나다,Bangun, beranjak
+일어나다,Bangun/beranjak
 고개,Tengkuk kepala
 돌리다,Memutar
 주고받다,Memberi dan menerima
 행동,Tindakan
 양보하다,Mempersilahkan
 함께,Bersama
-쓰다,Menggunakan, Menulis
+쓰다,Menggunakan/Menulis
 알아보다,Mencari tahu
 건강하다,Sehat
 눈살을 찌푸리다,Mengerutkan dahi
@@ -1087,7 +1088,7 @@
 예습하다,Mempersiapkan materi
 복습하다,Mengulang materi
 강의,Kursus
-듣다,Mengikuti, Mendengar
+듣다,Mengikuti/Mendengar
 따라 하다,Mengikuti
 퇴근하다,Pulang kerja
 단어,Kosakata
@@ -1101,10 +1102,10 @@
 비슷하다,Mirip
 이해하다,Memahami
 신청하다,Mendaftar
-과정,Kursus, kurikulum
+과정,Kursus/kurikulum
 수업,Pelajaran
 과목,Mata pelajaran
-기관,Lembaga, Institusi
+기관,Lembaga/Institusi
 교실,Ruang kelas
 자격증,Sertifikat
 개강,Awal semester
@@ -1123,7 +1124,8 @@
 센터,Pusat
 문의,Pertanyaan
 표시하다,Mengungkapkan
-다르다, 다른,Berbeda
+다르다,Berberda
+다른,Berbeda
 도움,Bantuan
 초급,Kelas awal
 중급,Kelas menengah
@@ -1131,7 +1133,8 @@
 무료,Gratis
 매주,Setiap minggu
 료,Biaya
-자격,Syarat, kualifikasi, status, jabatan
+자격,Syarat/kualifikasi
+자격,status/jabatan
 조건,Kondisi
 확인하다,Mengecek
 인적사항,Data pribadi
@@ -1142,7 +1145,7 @@
 가능하다,Memungkinkan
 습득하다,Menyerap
 체류,Tinggal
-기간, 시간,Waktu
+기간/시간,Waktu
 본국,Tanah Air
 안정적,Nyaman (stabil)
 재정착,Transmigran
@@ -1159,7 +1162,7 @@
 – 뿐만 아니라,Bukan hanya itu tapi juga
 기술,Teknologi
 포함되다,Termasuk
-과정별,Proses, tahapan
+과정별,Proses/tahapan
 전송하다,Mengirim (data)
 버튼,Tombol
 교육대상자,Terkait pihak (orang)
@@ -1192,7 +1195,7 @@
 예불을 드리다,Melakukan sembahyang (untuk orang Budha)
 미사를 드리다,Misa
 찬불가/성가,Puji-pujian
-불전, 헌금,Uang sedekah
+불전,Uang sedekah
 성지 순례를 가다,Naik haji
 불경,Tripitaka
 성경,Injil
@@ -1214,9 +1217,9 @@
 나무,Pohon
 만들다,Membuat
 매달다,Menggantungkan
-밝히다,Menyalakan, Menerangi
+밝히다,Menyalakan/Menerangi
 현제,Akhir-akhir ini
-처럼,Seperti, Mirip
+처럼,Seperti/Mirip
 행사,Acara
 중의 하나로,Satu di antara
 축제,Festival
@@ -1237,7 +1240,7 @@
 신성하다,Suci
 해,Matahari
 뜨다 (떠),Terbit
-기간,Waktu, Periode
+기간,Waktu/Periode
 특별,Khusus
 절제하다,Mengendalikan (bukan meningkatkan)
 열심히,Rajin
@@ -1272,7 +1275,7 @@
 가정 비상약,Obat P3K
 비타민,Vitamin
 식전,Sebelum makan
-머리,Kepala, rambut
+머리,Kepala/rambut
 귀,Telinga
 얼굴,Wajah
 눈,Mata
@@ -3687,6 +3690,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
