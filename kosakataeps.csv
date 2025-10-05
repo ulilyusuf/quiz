@@ -3200,15 +3200,14 @@
 국제법상,Hukum internasional
 대상,Anggota
 상실하다,Kehilangan
-취득하다,Memperoleh, mendapat
+취득하다,Memperoleh/mendapat
 출생하다,Lahir
 반드시,Harus
 변경하다,Pindah
 허가,Ijin
-출장소,Kantor cabang, kantor dinas
+출장소,Kantor cabang/kantor dinas
 서류,Dokumen
 비전문 취업,Kerja nonprofessional
-,
 상해 보험,Asuransi kecelakaan
 당연하다,Tentu saja
 가입하다,Mendaftar
@@ -3216,7 +3215,8 @@
 업무 상 재해,Kecelakaan kerja
 질병,Sakit parah
 그렇구나,Begitu
-보험료를 내다, 납입하다,Membayar biaya asuransi
+보험료를 내다,Membayar biaya asuransi
+납입하다,Membayar biaya asuransi
 상해,Kecelakaan
 장해,Cacat
 사망,Kematian (Nomina)
@@ -3231,9 +3231,9 @@
 사고 나다,Kecelakaan
 다행이다,Syukurlah
 진료 기록,Laporan medis
-작성,Mendata, Mengisi
+작성,Mendata/Mengisi
 진단서,Surat diagnosa
-보험금을 청구하다,Menagih, Mengklaim asuransi
+보험금을 청구하다,Klaim asuransi
 지급 심사를 받다,Menerima pemeriksaan pembayaran
 보험금을 지급하다,Membayar asuransi
 보험금을 타다,Menerima klaim asuransi
@@ -3241,7 +3241,8 @@
 영수증,Nota
 내역서,Surat perincian
 병원비,Biaya rumah sakit
-치료비, 요양비,Biaya perawatan
+치료비,Biaya perawatan
+요양비,Biaya perawatan
 휴업 급여,Gaji sementara
 장해 보상금,Ganti rugi cacat
 도입 목적 근거,Tujuan pengenalan / Dasar
@@ -3278,10 +3279,9 @@
 근로감독과,Lembaga pengelola ketenagakerjaan
 평균,Standar
 전부,Keseluruhan
-청구하다,Mengajukan, menagih
+청구하다,Mengajukan/menagih
 장애,Cacat
 사망,Meninggal
-,
 월급,Gaji
 생각보다,Daripada dipikirkan
 금액,Jumlah
@@ -3290,7 +3290,8 @@
 세금하다,Membayar pajak
 만큼,Sebanyak
 급여 명세서,Slip gaji
-실수령액, 실제로,Total pendapatan / Sebenarnya
+실수령액,Total pendapatan
+실제로,Total pendapatan / Sebenarnya
 급여 내역,Detail gaji
 기본급,Gaji pokok
 세금,Pajak
@@ -3689,6 +3690,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
