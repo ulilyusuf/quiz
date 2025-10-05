@@ -529,7 +529,7 @@
 기분이 나쁘다,Perasaannya buruk
 기쁘다,Senang
 슬프다,Sedih
-즐겁다,Lega, senang
+즐겁다,Lega/senang
 신나다,Bersemangat/gembira
 상쾌하다,Segar
 행복하다,Bahagia
@@ -542,11 +542,13 @@
 번개,Petir
 구름,Awan
 하늘,Langit
-해, 태양,Matahari
+해,Matahari
+태양,Matahari
 무지개,Pelangi
 습다,Kelembapan
 사계절,Empat Musim
-바람이 시원, 선선하다,Angin sejuk
+바람이 시원,Angin sejuk
+선선하다,Angin sejuk
 바람이 많이 불다,Bertiup banyak angin
 삼한사온,3 Hari dingin 4 hari panas
 동장군,Butiran salju yang membeku
@@ -557,7 +559,8 @@
 꽃샘추위,Perubahan warna bunga dan suhu
 황사바람,Angin debu
 꽃구경,Melihat Bunga
-무더위, 복날,Hari terpanas
+무더위,Hari terpanas
+복날,Hari terpanas
 장마철,Hujan di musim panas
 피서,Istilah liburan musim panas
 습하다,Lembab
@@ -569,8 +572,10 @@
 취미,Hobi
 낚시하다,Memancing
 자주,Sering
-항상, 늘,Selalu
-주로, 보통,Biasanya
+항상,Selalu
+늘,Selalu
+주로,Biasanya
+보통보통,Biasanya
 가끔,Jarang
 여행하다,Berwisata
 텐트를 하다,Berkemah
@@ -3679,6 +3684,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
