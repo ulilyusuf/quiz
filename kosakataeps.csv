@@ -39,17 +39,17 @@
 달력,Kalender
 창문,Jendela
 문,Pintu
-책을 펴세요,Membuka buku
-책을 덮으세요,Menutup buku
-보세요,Lihatlah
-들으세요,Dengarlah
-따라하세요,Ikutilah
-읽으세요,Bacalah
-쓰세요,Tulislah
-이야기하세요,Ceritakanlah
-대답하세요,Jawablah
-괜찮아요,Tidak apa – apa
-축하합니다,Selamat
+책을 펴다,Membuka buku
+책을 덮다,Menutup buku
+보다,Lihat
+듣다,Dengar
+따라하다,Ikut
+읽다,Baca
+쓰다,Tulis
+이야기하다,Bercerita
+대답하세요,Jawab
+괜찮다,Tidak apa – apa
+축하하다,Selamat
 사람,Orang
 나라,Negara
 미국,Amerika Serikat
@@ -64,7 +64,8 @@
 프란스,Perancis
 직업,Pekerjaan
 대학생,Maha Siswa
-"군인,군대",Tentara
+군인,Tentara
+군대,Tentara
 비서,Sekretaris
 교사,Pengajar
 선수,Atlet
@@ -73,7 +74,7 @@
 주부,IRT
 목수,Tukang kayu
 어부,Nelayan
-기술자,Te Teknisi
+기술자,Teknisi
 회사원,Karyawan (PT)
 공무원,Pegawai negeri
 소방관,Pemadam
@@ -101,18 +102,19 @@
 남동,Tenggara
 남서,Barat Daya
 복서,Barat Laut
-"장소, 곳",Tempat
-"–실, 소",Ruang
+장소, 곳,Tempat
+–실, 소,Ruang
 주유소,Pom Bensin
 샤워실,Kamar Mandi
 학교,Sekolah
 대학교,Universitas
 가게,Toko
-노점,"Kedai, Gerai"
+노점,Kedai
+노점,Gerai
 회사,Perusahaan
 사무실,Kantor
 화장실,Toilet
-식당,"Kantin, restoran"
+식당,Restoran
 집,Rumah
 기숙사,Asrama
 세탁소,Laundry
@@ -130,7 +132,7 @@
 화장품,Kosmetik
 빗,Sisir
 베개,Bantal
-침대,"Ranjang, Tempat tidur"
+침대,Ranjang/tempat tidur
 커튼,Gorden
 이불,Selimut
 바닥,Lantai
@@ -184,13 +186,16 @@
 빨간색,Merah
 주황색,Orange
 노란색,Kuning
-"초록색, 녹색",Hijau
+초록색,Hijau
+녹색,Hijau
 파란색,Biru
 남색,Biru tua
 보라색,Ungu
-"횐색, 하얀색",Putih
+횐색,Putih
+하얀색,Putih
 회색,Abu-abu
-"검전색, 검은색",Hitam
+검전색,Hitam
+검은색,Hitam
 분홍색,Pink
 연두색,Hijau Muda
 밤색,Coklat
@@ -242,7 +247,7 @@
 도서관,Perpustakaan
 백화점,Mall
 노래방,Tempat Karaoke
-"영화관, 극장",Bioskop
+영화관, 극장,Bioskop
 노래하다,Beryanyi
 게임하다,Bermain game
 산책하다,Jalan – jalan
@@ -266,9 +271,9 @@
 취사,Memasak
 개,Buah (satuan)
 송이,Tangkai (satuan)
-통,"Kantong, Gelondong (satuan)"
+통,Kantong, Gelondong (satuan)
 병,Botol (satuan)
-잔,"Gelas, cangkir (satuan)"
+잔,Gelas, cangkir (satuan)
 그릇,Mangkuk (satuan)
 대,Unit Mesin
 재,Unit Bangunan
@@ -277,7 +282,7 @@
 권,Jilid (Buku)
 자루,Batang (Pensil)
 구루,Batang (Pohon)
-포대,"Karung, sak"
+포대,Karung
 사과,Apel
 포도,Anggur
 수박,Semangka
@@ -362,7 +367,7 @@
 병원,Rumah sakit
 약국,Apotik
 위,Atas
-"아래, 밎",Bawah
+아래, 밎,Bawah
 앞,Depan
 뒤,Belakang
 안,Dalam
@@ -389,7 +394,7 @@
 상태,Kondisi
 내일,Besok
 괜찮다,Tidak apa-apa
-그런데,"Tetapi, Ngomong-omong"
+그런데,Tetapi/Ngomong-omong
 같이,Bersama
 영화,Film
 보다,Melihat
@@ -419,8 +424,9 @@
 출입국관리사무소,Kantor Imigrasi
 보건소,Pusat Kesehatan
 주민센터,Kantor catatan sipil
-쯤,"Sekitar, kira-kira"
-"그럼, 그러면",Kalau begitu
+쯤,Sekitar, kira-kira
+그럼,Kalau begitu
+그러면,Kalau begitu
 이르다,Lebih awal
 늦다,Terlambat
 가깝다,Dekat
@@ -442,7 +448,7 @@
 경우,Kondisi
 구체적으로,Secara Terperinci
 가볍다,Ringan
-만냑에,"Andaikata, Meskipun"
+만냑에,Andaikata, Meskipun
 언제든지,Kapan-kapan
 –더라도,Walaupun
 피하다,Menghindar
@@ -453,17 +459,18 @@
 자리가 없다,Tidak ada tempat duduk
 메뉴판,Daftar menu
 메뉴,Menu
-"밥, 진지",Nasi
+밥, 진지,Nasi
 반찬,Lauk
 숟가락,Sendok
 젓가락,Sumpit
 포크,Garpu
 앉다,Duduk
 고르다,Memilih
-시키다(주문하다),Memesan
+시키다,Memesan
+주문하다,Memesan
 배달하다,Mengantar
 좋아하다,Menyukai
-정말,"Sangat, Sungguh"
+정말,Sangat, Sungguh
 공기,Mangkuk Nasi
 그릇,Mangkuk
 접시,Piring
@@ -481,7 +488,7 @@
 시다,Asam
 놀다,Bermain
 손님,Tamu
-뚝배기,Mangkuk hitam dari tanah liat tahan panas (mangkuk korea)
+뚝배기,Mangkuk korea
 안주,Makanan pelengkap
 마른안주,Snack cumi kering / ikan kering
 계속,Terus menerus
@@ -509,15 +516,15 @@
 너무,Sangat
 정말,Sungguh
 아주,Sangat
-"가장, 제일",Paling
+가장, 제일,Paling
 특히,Khususnya
 요즘,Akhir-akhir ini
 기분이 좋다,Perasaannya senang
 기분이 나쁘다,Perasaannya buruk
 기쁘다,Senang
 슬프다,Sedih
-즐겁다,"Lega, senang"
-신나다,"Bersemangat, gembira"
+즐겁다,Lega, senang
+신나다,Bersemangat/gembira
 상쾌하다,Segar
 행복하다,Bahagia
 피곤하다,CapeK
@@ -529,11 +536,11 @@
 번개,Petir
 구름,Awan
 하늘,Langit
-"해, 태양",Matahari
+해, 태양,Matahari
 무지개,Pelangi
 습다,Kelembapan
 사계절,Empat Musim
-"바람이 시원, 선선하다",Angin sejuk
+바람이 시원, 선선하다,Angin sejuk
 바람이 많이 불다,Bertiup banyak angin
 삼한사온,3 Hari dingin 4 hari panas
 동장군,Butiran salju yang membeku
@@ -544,7 +551,7 @@
 꽃샘추위,Perubahan warna bunga dan suhu
 황사바람,Angin debu
 꽃구경,Melihat Bunga
-"무더위, 복날",Hari terpanas
+무더위, 복날,Hari terpanas
 장마철,Hujan di musim panas
 피서,Istilah liburan musim panas
 습하다,Lembab
@@ -556,8 +563,8 @@
 취미,Hobi
 낚시하다,Memancing
 자주,Sering
-"항상, 늘",Selalu
-"주로, 보통",Biasanya
+항상, 늘,Selalu
+주로, 보통,Biasanya
 가끔,Jarang
 여행하다,Berwisata
 텐트를 하다,Berkemah
@@ -594,7 +601,7 @@
 자전거를 타다,Naik sepeda
 수업,Pelajaran
 지역,Daerah
-각,"Masing-masing, setiap"
+각,Masing-masing, setiap
 복지관,Pusat komunitas
 외국인근로자센터,Pusat Ketenagakerjaan Asing
 외국인력지원센터,Pusat bantuan tenaga kerja asing
@@ -640,7 +647,7 @@
 이번,Kali ini
 휴가,Liburan
 사다,Membeli
-숙소,"Penginapan, akomodasi"
+숙소,Penginapan/akomodasi
 다,Semua
 예약하다,Memesan
 계획하다,Merencanakan
@@ -651,18 +658,18 @@
 짐을 풀다,Mengeluarkan bawaan
 묵다,Menginap
 박물관,Museum
-관람하다,"Mengunjungi, melihat-lihat"
+관람하다,Mengunjungi/melihat-lihat
 축제,Festival
 구경하다,Melihat-lihat
-기념품,"Souvenir, oleh-oleh"
+기념품,Souvenir/oleh-oleh
 가깝다,Dekat
 정보,Informasi
 이용하다,Menggunakan
 저렴하다,Terjangkau
-단체,"Organisasi, Kelompok"
+단체,Organisasi/Kelompok
 관광지,Tempat wisata
-저렴하다,"Murah, Terjangkau"
-얻다,"Mendapat, Menerima"
+저렴하다,Murah/Terjangkau
+얻다,Mendapat/Menerima
 시청,Balai kota
 버스,Bus
 지하철,Subway
@@ -686,11 +693,11 @@
 공항,Bandara
 여객터미널 (선착장),Pelabuhan
 걸어오다,Datang berjalan kaki
-정도,"Sekitar, kira-kira"
+정도,Sekitar/kira-kira
 출근하다,Berangkat kerja
 퇴근하다,Pulang kerja
 출퇴근 시간,Jam sibuk
-차가 막히다,Macet
+막히다,Macet
 걸리다,Membutuhkan (waktu)
 타고 가다,(Pergi) naik
 타고 오다,(Datang) naik
@@ -698,7 +705,8 @@
 걸어가다,Pergi berjalan
 걸어오다,Datang berjalan
 내리다,Turun
-"갈아타다, 환승하다",Oper kendaraan
+갈아타다,Oper kendaraan
+환승하다,transit
 지나다,Melewati
 대중교통,Transportasi umum
 방법,Cara
@@ -739,13 +747,13 @@
 확인하다,Memeriksa
 알다,Mengetahui
 바쁘다,Sibuk
-귀엽다,"Imut, lucu"
+귀엽다,Imut, lucu
 편리하다,Nyaman
-회원 가입,"Mendaftar akun, anggota"
+회원 가입,Mendaftar akun, anggota
 대부분,Sebagian besar
 외국인등록번호,Nomor ID
 검색 엔진,Mesin pencarian
-회원 탈퇴,"Menghapus akun, anggota"
+회원 탈퇴,Menghapus akun, anggota
 아이디,ID
 비밀번호,Password
 화상 채팅,Chatting dengan video
@@ -754,7 +762,7 @@
 체류 신고,Pelaporan ijin tinggal
 전화번호 안내,Informasi nomor telepon
 고용노동부 고객상담센터,Pusat konsultasi nasabah tenaga kerja asing
-"화재, 응급 환자 발생 신고",Pelaporan kondisi darurat dan kebakaran
+화재, 응급 환자 발생 신고,Pelaporan kondisi darurat dan kebakaran
 외국인력상담센터,Pusat konsultasi ketenagakerjaan asing
 기초 지방자치단체 각종 생활 민원 신고,Pelaporan catatan sipil
 이주여성 긴급지원 센터,Pusat bantuan darurat bagi WNA perempuan
@@ -780,7 +788,7 @@
 같이,Bersama
 쓸다,Menyapu
 먼지,Debu
-닦다,"Mengelap, Mengepel"
+닦다,Mengelap, Mengepel
 깨끗하다,Bersih
 어지럽다,Berantakan
 정돈되어 있다,Tertata rapi
@@ -890,7 +898,7 @@
 동료,Rekan kerja
 세제,Detergen
 휴지,Tisu toilet
-인기,"Minat, Terkenal"
+인기,Minat/Terkenal
 거품,Busa
 생기다,Muncul
 처럼,Seperti
@@ -900,7 +908,7 @@
 풀리다,Membuka
 요즘,Akhir-akhir ini
 물어보다,Menanyakan
-"새,새로,새로운",Baru
+새,새로,새로운,Baru
 어울리다,Cocok
 시계,Jam
 화분,Vas bunga
@@ -920,7 +928,7 @@
 다치다,Terluka
 금지,Larangan
 표지판,Papan rambu
-그냥,"Begitu saja, Terus, Tanpa alasan"
+그냥,Begitu saja/Tanpa alasan
 조심하다,Hati-hati
 횡단보도,Zebra cross
 금연,Dilarang merokok
@@ -939,7 +947,7 @@
 버스 정류장,Halte bus
 구역,Area
 벌금,Denda
-벌다 행동,"Cari, mengumpulkan, menghemat"
+벌다 행동,Cari/mengumpulkan/menghemat
 행동,Kegiatan
 담배를 피우다,Merokok
 담배꽁초를 버리다,Membuang puntung rokok
@@ -951,7 +959,9 @@
 자리를 차지하다,Mengambil tempat duduk
 다리를 벌려서 앉다,Duduk membuka kaki
 손대다,Menyentuh
-"대중, 공공, 공종",Umum
+대중,Umum
+공공,Umum
+공종,Umum
 화장실,Toilet
 공중전화,Telepon umum
 주차장,Tempat parkir
@@ -966,7 +976,7 @@
 이런,Seperti ini
 좌석,Tempat duduk
 노약자,Orang kebutuhan khusus
-장애인,"Difabel, cacat"
+장애인,Difabel/cacat
 임산부,Ibu hamil dan menyusui
 어린,Anak-anak
 자리,Tempat duduk
@@ -995,7 +1005,7 @@
 음료수,Minuman ringan
 선물하다,Menghadiahi
 좋아하다,Menyukai
-"잡수시다, 드시다",Makan atau minum (sopan)
+잡수시다, 드시다,Makan atau minum (sopan)
 주무시다,Tidur (sopan)
 잠을 자다,Tidur
 말씀하시다,Berkata (sopan)
@@ -1037,14 +1047,14 @@
 나이,Umur
 실례되다,Kasar
 마치다,Menyelesaikan
-일어나다,"Bangun, beranjak"
+일어나다,Bangun, beranjak
 고개,Tengkuk kepala
 돌리다,Memutar
 주고받다,Memberi dan menerima
 행동,Tindakan
 양보하다,Mempersilahkan
 함께,Bersama
-쓰다,"Menggunakan, Menulis"
+쓰다,Menggunakan, Menulis
 알아보다,Mencari tahu
 건강하다,Sehat
 눈살을 찌푸리다,Mengerutkan dahi
@@ -1063,7 +1073,7 @@
 예습하다,Mempersiapkan materi
 복습하다,Mengulang materi
 강의,Kursus
-듣다,"Mengikuti, Mendengar"
+듣다,Mengikuti, Mendengar
 따라 하다,Mengikuti
 퇴근하다,Pulang kerja
 단어,Kosakata
@@ -1077,10 +1087,10 @@
 비슷하다,Mirip
 이해하다,Memahami
 신청하다,Mendaftar
-과정,"Kursus, kurikulum"
+과정,Kursus, kurikulum
 수업,Pelajaran
 과목,Mata pelajaran
-기관,"Lembaga, Institusi"
+기관,Lembaga, Institusi
 교실,Ruang kelas
 자격증,Sertifikat
 개강,Awal semester
@@ -1099,7 +1109,7 @@
 센터,Pusat
 문의,Pertanyaan
 표시하다,Mengungkapkan
-"다르다, 다른",Berbeda
+다르다, 다른,Berbeda
 도움,Bantuan
 초급,Kelas awal
 중급,Kelas menengah
@@ -1107,7 +1117,7 @@
 무료,Gratis
 매주,Setiap minggu
 료,Biaya
-자격,"Syarat, kualifikasi, status, jabatan"
+자격,Syarat, kualifikasi, status, jabatan
 조건,Kondisi
 확인하다,Mengecek
 인적사항,Data pribadi
@@ -1118,7 +1128,7 @@
 가능하다,Memungkinkan
 습득하다,Menyerap
 체류,Tinggal
-"기간, 시간",Waktu
+기간, 시간,Waktu
 본국,Tanah Air
 안정적,Nyaman (stabil)
 재정착,Transmigran
@@ -1135,7 +1145,7 @@
 – 뿐만 아니라,Bukan hanya itu tapi juga
 기술,Teknologi
 포함되다,Termasuk
-과정별,"Proses, tahapan"
+과정별,Proses, tahapan
 전송하다,Mengirim (data)
 버튼,Tombol
 교육대상자,Terkait pihak (orang)
@@ -1168,7 +1178,7 @@
 예불을 드리다,Melakukan sembahyang (untuk orang Budha)
 미사를 드리다,Misa
 찬불가/성가,Puji-pujian
-"불전, 헌금",Uang sedekah
+불전, 헌금,Uang sedekah
 성지 순례를 가다,Naik haji
 불경,Tripitaka
 성경,Injil
@@ -1190,9 +1200,9 @@
 나무,Pohon
 만들다,Membuat
 매달다,Menggantungkan
-밝히다,"Menyalakan, Menerangi"
+밝히다,Menyalakan, Menerangi
 현제,Akhir-akhir ini
-처럼,"Seperti, Mirip"
+처럼,Seperti, Mirip
 행사,Acara
 중의 하나로,Satu di antara
 축제,Festival
@@ -1213,9 +1223,9 @@
 신성하다,Suci
 해,Matahari
 뜨다 (떠),Terbit
-기간,"Waktu, Periode"
+기간,Waktu, Periode
 특별,Khusus
-절제하다,"Mengendalikan (bukan ""meningkatkan"")"
+절제하다,Mengendalikan (bukan meningkatkan)
 열심히,Rajin
 감기에 걸리다,Flu
 열이 나다,Demam
@@ -1248,7 +1258,7 @@
 가정 비상약,Obat P3K
 비타민,Vitamin
 식전,Sebelum makan
-머리,"Kepala, rambut"
+머리,Kepala, rambut
 귀,Telinga
 얼굴,Wajah
 눈,Mata
@@ -1276,16 +1286,16 @@
 아프고 열이 많이 나요,Sakit dan panas tinggi
 알레르기,Alergi
 앓다,Sakit
--일분,"Unit, Volume"
--포,"Tablet, Dosis"
--회,"Waktu, Kali, Babak"
+-일분,Unit, Volume
+-포,Tablet, Dosis
+-회,Waktu, Kali, Babak
 가정,Keluarga
 약을 짓다,Meracik obat
 약품,Obat-obatan
 어지럽다,Pusing
 건강음료,Minuman kesehatan
 근육통,Nyeri otot
-나오다,"Keluar, muncul"
+나오다,Keluar, muncul
 내복약,Obat dalam
 눈에 뭐가 나다,Kelilipan
 눈이 뻑뻑하다,Mata kering
@@ -1356,7 +1366,7 @@
 휴진,Libur (klinik tutup)
 공휴일,Libur nasional
 통장,Buku tabungan
-저금,"Celengan, tabungan"
+저금,Celengan, tabungan
 신분증,Kartu identitas
 여권,Paspor
 신청서,Formulir pendaftaran
@@ -1387,7 +1397,7 @@
 제공하다,Menyediakan
 근로자,Pekerja
 바꾸다,Menukar
-별로,"Hampir, tidak terlalu"
+별로,Hampir, tidak terlalu
 전용,Khusus
 금융,Perbankan
 월급,Gaji
@@ -1395,15 +1405,15 @@
 지역,Daerah
 설치하다,Memperlengkapi / memasang
 또한,Selain itu
-실시하다,"Menjalankan, melaksanakan"
-영업,"Bisnis, dagang"
+실시하다,Menjalankan, melaksanakan
+영업,Bisnis, dagang
 환전,Menukar uang
 대출,Peminjaman
-할부,"Cicilan (utang, kredit)"
-일시불,"Kontan, pembayaran penuh sekaligus"
+할부,Cicilan (utang, kredit)
+일시불,Kontan, pembayaran penuh sekaligus
 엽서,Kartu pos
 보내다,Mengirim
-올려놓다,"Meletakkan, menaikkan"
+올려놓다,Meletakkan, menaikkan
 우편번호,Kode pos
 쓰다,Menulis
 편지,Surat
@@ -1418,7 +1428,7 @@
 배편,Pengiriman via kapal
 항공편,Pengiriman via pesawat
 열흘,10 hari
-급하다,"Darurat, mendesak"
+급하다,Darurat, mendesak
 국제 특급,Paket kilat internasional
 무게를 재다,Menimbang
 일반 우편,Pengiriman biasa
@@ -1427,13 +1437,13 @@
 주소,Alamat
 서류,Dokumen
 전하다,Menyampaikan
-배달하다,"Mengantar, mengirim"
+배달하다,Mengantar, mengirim
 발송하다,Mengirim
 연결되다,Terhubung
-여부,"Status, kepastian"
+여부,Status, kepastian
 조회하다,Mengecek
 결과,Hasil
-현재,"Saat ini, sekarang"
+현재,Saat ini, sekarang
 가능하다,Memungkinkan
 물품,Barang
 한약,Obat herbal
@@ -1452,18 +1462,18 @@
 운송장,Surat jalan / tanda pengiriman
 외국인력지원센터,Pusat Bantuan Pekerja Asing
 배우다,Belajar
-수업,"Pelajaran, kelas"
+수업,Pelajaran, kelas
 전혀,Sama sekali (tidak)
 상담,Konsultasi
 교육,Pendidikan
 법률 교육,Pendidikan hukum
 안전,Keamanan
-기획하다,"Merencanakan, menggelar"
+기획하다,Merencanakan, menggelar
 국가별,Internasional / multi-nasional
 여러 가지,Berbagai macam
 광고,Iklan
 무료,Gratis
-기관,"Lembaga, institusi"
+기관,Lembaga, institusi
 국악,Musik tradisional
 금융,Finansial
 영양,Nutrisi
@@ -1494,20 +1504,20 @@
 상담사,Konsultan
 방문하다,Mengunjungi
 미리,Terlebih dahulu
-현황,"Kondisi, situasi"
-소개,"Pengenalan, perkenalan"
-고충,"Masalah, kesulitan"
+현황,Kondisi, situasi
+소개,Pengenalan, perkenalan
+고충,Masalah, kesulitan
 다양하다,Beragam
-이루어지다,"Tercapai, terwujud"
+이루어지다,Tercapai, terwujud
 홈페이지,Halaman utama / website
 여러 가지,Beberapa macam
--뿐만 아니라,"Bukan hanya itu, tapi juga"
+-뿐만 아니라,Bukan hanya itu, tapi juga
 고충 상담,Layanan konsultasi masalah
 국가별,Multi-nasional
 행사,Acara
 체험,Pengalaman
 기획하다,Menggelar
-신기하다,"Kaget, heran"
+신기하다,Kaget, heran
 처음,Pertama kali
 일 년 내내,Sepanjang tahun
 최저기온,Suhu terendah
@@ -1551,14 +1561,14 @@
 광역시,Kota metropolitan
 함께,Bersama
 수도권,Metropolitan / Daerah Ibu Kota
-도,"Provinsi, Pulau"
+도,Provinsi, Pulau
 절반,Setengah bagian
 중부 지방,Wilayah tengah
 남부 지방,Wilayah selatan
 신라의 수도였던,Ibu kota zaman kerajaan Silla
 세계 문화유산,Warisan budaya dunia
 지정되다,Ditetapkan
-독특하다,"Khas, unik"
+독특하다,Khas, unik
 자연환경,Lingkungan alam
 간직하다,Menyimpan
 국제 자유,Bebas secara internasional
@@ -1571,26 +1581,26 @@
 연평균,Rata-rata tahunan
 섬,Pulau / kepulauan
 따뜻하다,Hangat
-이때,"Saat ini, waktu ini"
+이때,Saat ini, waktu ini
 아름답다,Indah
 관광객,Turis
 꼭,Harus
 역할을 하다,Berperan
-과학,"Ilmu alam, ilmu pasti"
+과학,Ilmu alam, ilmu pasti
 행정,Administrasi
 중심지,Tempat pusat
 쌀,Beras
-발달하다,"Tumbuh, berkembang"
+발달하다,Tumbuh, berkembang
 점심,Siang
 복날,Hari terpanas
-뜨겁다,"Panas (sangat panas, menyengat)"
+뜨겁다,Panas (sangat panas, menyengat)
 몸,Badan
 더위,Hawa panas
 이기다,Mengalahkan
 힘,Tenaga
 따뜻하다,Hangat
 뜨겁다,Panas
-"차다,차갑다",Dingin
+차다,차갑다,Dingin
 누가,Siapa
 아주,Sangat
 맛있다,Enak
@@ -1654,7 +1664,7 @@
 원을 빌다,Membuat permohonan
 보통,Biasanya
 노래,Lagu
-가구,"Perabot, Perkakas"
+가구,Perabot, Perkakas
 한국건설,Perusahaan konstruksi Korea
 처음,Pertama kali
 윷놀이,Permainan 윷
@@ -1669,12 +1679,12 @@
 기대되다,Bersemangat
 추석,Hari raya panen
 연휴,Liburan tahunan
-아직,"Belum, Masih"
+아직,Belum, Masih
 잘 모르겠다,Tidak tahu
 못,Tidak bisa
 행사하다,Mengadakan acara
 전통 놀이,Permainan tradisional
-체험,"Tindakan mengalami, mengetahui"
+체험,Tindakan mengalami, mengetahui
 친척,Kerabat
 차례를 지내다,Ritual penghormatan
 절하다,Bersujud
@@ -1695,12 +1705,12 @@
 짓다,Mengolah
 오곡밥,Nasi 5 jenis biji-bijian
 마르다,Kering
-나물,"Sayuran, akar-akaran"
+나물,Sayuran, akar-akaran
 요리하다,Memasak
 땅콩,Kacang tanah
 호두,Kacang kenari
 껍질,Kulit
-딱딱하다,"Keras, Alot"
+딱딱하다,Keras, Alot
 견과류,Kacang-kacangan
 부스럼,Bisul
 생기다,Muncul
@@ -1709,7 +1719,7 @@
 가루,Tepung
 대표적인,Khas
 여성,Kaum perempuan
-동그랗게,"Melingkar, bundar"
+동그랗게,Melingkar, bundar
 잡다,Memegang
 빙글빙글,Berputar
 거두다,Panen
@@ -1740,7 +1750,7 @@
 어울리다,Cocok
 끝나다,Selesai
 폐백을 드리다,Melakukan hormat kepada orang tua
-친척,"Kerabat, saudara"
+친척,Kerabat, saudara
 인사,Salam
 전통 혼례,Pernikahan tradisional
 결혼식,Pernikahan
@@ -1761,7 +1771,7 @@
 놓다,Meletakan
 현대적인,Modern
 그렇지만,Akan tetapi
-모습,"Bentuk, penampilan"
+모습,Bentuk, penampilan
 남아 있다,Masih tersisa
 대표적인,Khas
 제사,Penghormatan leluhur
@@ -1772,7 +1782,7 @@
 제사상,Meja sesajen
 전,Pancake
 나물,Sayur
-정성스럽게,"Tulus, sungguh-sungguh"
+정성스럽게,Tulus, sungguh-sungguh
 명절,Hari raya
 장례,Pemakaman
 장례식장,Tempat pemakaman
@@ -1799,7 +1809,7 @@
 가수,Penyanyi
 영화배우,Artis film
 아이돌,Idola
-데,"Tempat, hal, sesuatu, situasi, kondisi"
+데,Tempat, hal, sesuatu, situasi, kondisi
 잘하다,Melakukan dengan baik
 새로,Baru
 전자,Elektronik
@@ -1818,7 +1828,7 @@
 개발도상국,Negara berkembang
 무역,Perdagangan
 경제 발전,Perkembangan ekonomi
-맞다,"Betul, tepat"
+맞다,Betul, tepat
 방금,Baru saja
 우산,Payung
 개발하다,Berkembang
@@ -1840,9 +1850,9 @@
 인기를 얻다,Populer
 인해,Melalui
 늘어나다,Meningkat
-관광,"Wisata, Pariwisata"
-관광객,"Wisatawan, Turis"
-관심 활동하다,"Minat, Beraktivitas"
+관광,Wisata, Pariwisata
+관광객,Wisatawan, Turis
+관심 활동하다,Minat, Beraktivitas
 우수성,Keunggulan
 전단지,Formulir siaran / brosur
 성수기,Waktu penuh/ramai
@@ -1859,7 +1869,7 @@
 안전하다,Aman
 맞다,Benar
 단정하다,Rapi
-모습,"Bentuk, penampilan"
+모습,Bentuk, penampilan
 처음,Pertama kali
 익숙하다,Terbiasa
 유니폼,Seragam
@@ -1872,8 +1882,8 @@
 머리,Kepala
 자르다,Memotong
 기분,Perasaan
-답답하다,"Sumpek, Sempit"
-별로,"Hampir, Agak"
+답답하다,Sumpek, Sempit
+별로,Hampir, Agak
 늦게,Terlambat
 잠깐,Sebentar
 무슨 일,Ada masalah apa?
@@ -1895,7 +1905,7 @@
 피해를 주다,Menyakiti hati
 불쾌하다,Merasa tidak nyaman
 무시하다,Cuek
-신경 쓰다,"Memperhatikan, Menghiraukan"
+신경 쓰다,Memperhatikan, Menghiraukan
 공공장소,Tempat umum
 의견,Perasaan
 신입 사원,Pekerja baru
@@ -1923,7 +1933,7 @@
 생산직,Pekerja pabrik
 사무직,Pekerja kantoran
 기본적인,Dasar
-질서,"Kedisiplinan, disiplin"
+질서,Kedisiplinan, disiplin
 (공장 비품) 훔치다,Mencuri
 딴짓하다,Pelarian
 잡담 하다,Bercakap-cakap / Mengobrol
@@ -1966,7 +1976,7 @@
 전기난로,Pemanas elektrik
 전기장판,Kasur elektrik
 스위치,Tombol
-"켜다, 끄다","Menghidupkan, mematikan"
+켜다, 끄다,Menghidupkan, mematikan
 플러그,Colokan
 꽂다,Menancapkan
 뽑다,Mencabut
@@ -1999,7 +2009,7 @@
 부럽다,Iri
 편하다,Nyaman
 더,Lebih
-잘되다,"Baik, Lancar"
+잘되다,Baik, Lancar
 상사,Atasan
 부하,Bawahan
 사이가 나쁘다,Hubungan buruk
@@ -2026,14 +2036,14 @@
 화가 나다,Marah
 화를 내다,Mengomel
 싸움을 하다,Berkelahi
-오해를 풀다,"Mengklarifikasi, menyelesaikan salah paham"
+오해를 풀다,Mengklarifikasi, menyelesaikan salah paham
 주문,Pesanan
 늘다,Meningkat
 이제,Sekarang
 구내식당,Kantin
 잘못이에요,Bersalah
 직책,Jabatan
-호칭,"Panggilan, Julukan"
+호칭,Panggilan, Julukan
 예를 들면,Mengambil contoh
 부르다,Memanggil
 비슷하다,Mirip
@@ -2070,7 +2080,7 @@
 잔소리를 하다,Mengomel
 말대꾸 하다/ 말대답 하다,Menyanggah (menjawab dengan menyangkal)
 꿈밤을 맞다,Memukul kepala (menjitak)
-괴롭히다,"Menyiksa, menyakiti (membully)"
+괴롭히다,Menyiksa, menyakiti (membully)
 멱살을 잡다,Memegang krah baju
 발길질을 하다,Menendang kaki
 주먹질을 하다,Menonjok dengan kepalan tangan
@@ -2104,7 +2114,7 @@
 차에 가다,Pergi ke sesi kedua
 건배하다,Bersulang
 단합 대회,Acara penyambutan
-열심히,"Rajin, Giat"
+열심히,Rajin, Giat
 승진하다,Naik pangkat
 소개하다,Memperkenalkan
 환영하다,Menyambut
@@ -2123,7 +2133,7 @@
 야유회,Acara piknik
 체육대회,Acara kompetisi olahraga
 걱정 말다,Jangan khawatir
-아직,"Masih, belum"
+아직,Masih, belum
 새로,Baru
 두껍다,Tebal
 담다,Mengisi
@@ -2145,11 +2155,11 @@
 알리다,Mengetahui
 양해,Pengertian
 구하다,Meminta
-가볍다,"Ringan, lembut"
+가볍다,Ringan, lembut
 대다,Menyentuh
 따르다,Menuangkan
 반대쪽,Arah sebaliknya
-고개,"Tengkuk, leher"
+고개,Tengkuk, leher
 관람하다,Memperlihatkan
 도모하다,Merencanakan
 유도하다,Beralasan
@@ -2196,7 +2206,7 @@
 행동,Tindakan
 감정,Perasaan
 생기다,Muncul
-분명하다,"Jelas, Nyata"
+분명하다,Jelas, Nyata
 표현하다,Mengekspresikan
 성폭력,Kekerasan seksual
 당하다,Mengalami
@@ -2206,7 +2216,7 @@
 증거,Bukti
 확보하다,Menjamin
 피해자,Korban
-가해자,"Tersangka, Penganiaya"
+가해자,Tersangka, Penganiaya
 사실,Fakta
 반드시,Harus
 기억하다,Mengingat
@@ -2214,7 +2224,7 @@
 의사,Kehendak
 신고하다,Melapor
 강요하다,Memaksa
-요구하다,"Meminta, menuntut"
+요구하다,Meminta, menuntut
 불이익을 주다,Merugikan
 일찍,Awal
 개인적인,Diri sendiri
@@ -2227,23 +2237,23 @@
 언어,Perkataan
 유발하다,Memicu
 따라서,Oleh karena itu
-이상,"Lebih dari, Di atas"
+이상,Lebih dari, Di atas
 사회문자,Masalah sosial
 판단하다,Menganggap
 기준,Standar
 활력소,Sumber Energi
 차별하다,Diskriminasi
 에를 들어,Contohnya
-"싫다, 쳐다",Benci
-정확하다,"Tepat, akurat"
+싫다, 쳐다,Benci
+정확하다,Tepat, akurat
 실제로,Sebenarnya
 원하다,Ingin
 상황,Kondisi
-거부,"Menyanggah, menolak"
-명시적인,"Spesifik, eksplisit"
+거부,Menyanggah, menolak
+명시적인,Spesifik, eksplisit
 의사 표현,Ekspresi kehendak
 처벌,Hukuman
-개념,"Konsep, Gagasan"
+개념,Konsep, Gagasan
 사업주,Pemilik perusahaan
 상급자,Atasan
 근로자,Pekerja
@@ -2254,7 +2264,7 @@
 혐오감,Rasa Tidak Suka
 느끼다,Merasa
 요구,Permintaan
-발음,"Pengucapan, Pelafalan"
+발음,Pengucapan, Pelafalan
 이유,Alasan
 고용상,Pekerjaan
 남녀고용평등법,Hukum Persamaan gender
@@ -2264,7 +2274,7 @@
 결과,Akibat
 실시,Pemberlakuan
 조치,Tindakan
-분쟁,"Pertikaian, bentrok"
+분쟁,Pertikaian, bentrok
 자율적,Mandiri
 징계,Hukuman
 구제,Rehabilitasi
@@ -2273,7 +2283,7 @@
 견책,Teguran
 정직,Skorsing
 감봉,Potong gaji
-해고,"Pemberhentian, pecat"
+해고,Pemberhentian, pecat
 행정적,Administratif
 책임,Tanggung jawab
 민사,Perdata
@@ -2281,7 +2291,7 @@
 비난,Celaan
 명예 손상,Pencemaran nama baik
 성적 언동,Perbuatan Senonoh
-해당하다,"Relevan, tepat"
+해당하다,Relevan, tepat
 경범죄,Perbuatan Kurang Baik
 교통 위반,Pelanggaran lalu lintas
 불법 체류,Tinggal secara ilegal
@@ -2311,7 +2321,7 @@
 못,Paku
 볼트,Baut
 너트,Mur
-금방,"Baru saja, beberapa saat"
+금방,Baru saja, beberapa saat
 구멍,Lubang
 벽,Tembok
 일찍,Lebih awal
@@ -2339,7 +2349,7 @@
 핸드카,Alat pengangkut
 전선 릴,Rol kabel
 올리다,Menaikan
-포장,"Pengemasan, pembungkusan"
+포장,Pengemasan, pembungkusan
 무겁다,Berat
 운반하다,Memindahkan
 절곡기,Alat pemotong
@@ -2360,10 +2370,10 @@
 커터기,Pemotong Solasi
 철근 절단기,Mesin Pemotong Besi
 철근 절곡기,Mesin Pembengkok Besi
-흙손,"Sedok semen, sekop, Trowel"
+흙손,Sedok semen, sekop, Trowel
 노루발못 뽑이,Penyukit
 착유기,Mesin pemerah susu
-"끌개, 헤라","Kepi, Susruk"
+끌개, 헤라,Kepi, Susruk
 예초기,Mesin pemotong rumput
 라디에이터,Radiator
 히터,Hitter
@@ -2396,7 +2406,7 @@
 접다,Melipat
 상자,Kotak
 완성하다,Menyelesaikan
-충분하다,"Tersedia, cukup"
+충분하다,Tersedia, cukup
 남다,Tersisa
 주문하다,Memesan
 도착하다,Tiba
@@ -2413,7 +2423,7 @@
 소풍을 가다,Piknik
 준비하다,Menyiapkan
 수공구,Alat
-확실하다,"Mantap, tepat"
+확실하다,Mantap, tepat
 작업물,Material
 정확하다,Akurat
 장착,Menggunakan
@@ -2441,7 +2451,7 @@
 거푸집,Cetakan
 반석,Pondasi
 설치하다,Merangkai
-철근 조립하다,"Besi, Merakit"
+철근 조립하다,Besi, Merakit
 저희,Kita
 먼저,Terlebih dahulu
 옮기다,Memindahkan
@@ -2473,7 +2483,7 @@
 중자,Kardus sedang
 소자,Kardus kecil
 주문서,Formulir pemesanan
-"담다, 넣다",Memasukan
+담다, 넣다,Memasukan
 묶다,Menalikan
 나르다,Memindahkan
 쌓다,Menumpuk
@@ -2486,18 +2496,18 @@
 움직이다,Menggerakan
 크레인(기중기),Mesin Derek
 무겁다,Berat
-수평,"Horisontal, Arah Datar"
+수평,Horisontal, Arah Datar
 이동시키다,Memindah
 화물차 (트럭),Truk pengangkut
 화물,Muatan
 실어 나르다,Mengangkut
 굴착기,Alat pengeruk
-"땅, 암석","Tanah, Batuan"
+땅, 암석,Tanah, Batuan
 따위,Sejenis
 파내다,Menggali
 처리하다,Mengatur
 불도저,Buldozer
-흙,"Gundukan, tanah liat"
+흙,Gundukan, tanah liat
 밀다,Mendorong
 다지다,Mengeraskan
 지면,Permukaan
@@ -2510,7 +2520,7 @@
 자갈,Kerikil
 모래,Pasir
 석탄,Batubara
-그레이더,"Grader, Perata"
+그레이더,Grader, Perata
 땅바닥,Permukaan tanah
 깎다,Meratakan
 레미콘,Truk pengaduk semen
@@ -2540,7 +2550,7 @@
 잘 되어 있다,Tertata rapi
 심하다,Parah
 소음,Suara
-쾌적하다,"Damai, tenang"
+쾌적하다,Damai, tenang
 버리다,Membuang
 환기하다,Membuka ventilasi
 열다,Membuka
@@ -2563,11 +2573,11 @@
 손수레,Troli
 일륜차,Gerobak sorong
 사다리,Tangga
-마대,"Karung, Goni"
+마대,Karung, Goni
 바구니,Keranjang
 비닐 끈,Tali plastik
 실내 공기,Udara dalam ruang
-동네,"Desa, Kompleks"
+동네,Desa, Kompleks
 강물,Air sungai
 환경,Lingkungan
 낭비,Boros
@@ -2598,11 +2608,11 @@
 밀폐 공간,Menyegel ruangan
 전체 환기장치,Penyegaran udara menyeluruh
 국소 배기장치,Sistem pembuangan gas/udara sebagian
-괭이,"Pangkur, Cangkul"
+괭이,Pangkur, Cangkul
 챙기다,Menyiapkan
 고구마,Ubi
 캐다,Mencabut
-호미,"Cangkul, Skop"
+호미,Cangkul, Skop
 밭,Ladang
 딱딱하다,Keras
 상처가 나다,Muncul luka
@@ -2625,7 +2635,7 @@
 경운기,Traktor
 콤바인,Alat pemanen
 옮기다,Memindah
-고생,"Susah, Menderita, Sukar, Sulit"
+고생,Susah, Menderita, Sukar, Sulit
 비료,Pupuk
 뿌리다,Menyebar
 준비,Persiapan
@@ -2635,11 +2645,11 @@
 자라다,Tumbuh
 곡류,Jenis biji-bijian
 벼,Padi
-보리,"Barli, Jawawut"
+보리,Barli, Jawawut
 밀,Gandum
 콩,Kacang
-"키우다, 기르다, 재배하다",Memelihara
-"거두다, 수확하다",Memanen
+키우다, 기르다, 재배하다,Memelihara
+거두다, 수확하다,Memanen
 따다,Memetik
 씨앗,Bibit
 거름,Pupuk kompos
@@ -2669,9 +2679,9 @@
 재배하다,Membudidayakan
 잔디밭,Rumput
 쑥갓을 (기르다 /키우다),memelihara/merawat tanaman yang berbau harum yang biasanya dimakan mentah (lalap)
-지시,"Perintah, petunjuk"
-신경 쓰다,"Memikirkan, memperhatikan"
-바꾸다,"Menukar, mengganti"
+지시,Perintah, petunjuk
+신경 쓰다,Memikirkan, memperhatikan
+바꾸다,Menukar, mengganti
 사료,Pakan
 소,Sapi
 한테,Kepada
@@ -2702,8 +2712,8 @@
 몇 번,Beberapa kali
 어디 좀 봐,Coba saya lihat
 단단히,Dengan Kuat
-혼을 내다,"Memberi teguran, memarahi"
-엉키다,"Terlilit, Kusut, Kacau"
+혼을 내다,Memberi teguran, memarahi
+엉키다,Terlilit, Kusut, Kacau
 다시,Lagi
 제때,Tepat waktu
 갈다,Mengganti
@@ -2717,15 +2727,15 @@
 도르래,Katrol
 뜰채,Jaring kecil
 낚시 바늘,Mata pancing
-"부자, 부표",Pelampung
+부자, 부표,Pelampung
 바늘대,Jarum sulam
 수중 펌프,Pompa selam
 수경,Kacamata renang
-갈퀴,"Penggaruk, Garu"
+갈퀴,Penggaruk, Garu
 스티로품 상자,Sterofoam
 지나다,Melewati
 고장나다,Rusak
-"수리하다, 고치다",Memperbaiki
+수리하다, 고치다,Memperbaiki
 축산업,Industri peternakan
 배합기,Mesin Pencampur pakan
 투입하다,Memasukan
@@ -2741,7 +2751,7 @@
 조개,Kerang
 낚지,Cumi-cumi
 굴,Tiram
-기르다,"Memelihara, Membudidayakan"
+기르다,Memelihara, Membudidayakan
 염전,Ladang Garam
 생산하다,Memproduksi
 소금,Garam
@@ -2756,16 +2766,16 @@
 냉동,Pendingin
 컨테이너,Kontainer
 입고하다,Menyetok
-"보관하다, 저장하다",Menyimpan
+보관하다, 저장하다,Menyimpan
 덮개를 덮다,Menutup dengan penutup
 온도를 유지하다,Menjaga suhu
 관리하다,Mengelola
 모든,Semua
 파손되다,Rusak
 지난번,Sebelumnya
-생각,"Pikiran, ingatan"
+생각,Pikiran, ingatan
 제대,Standar
-결심하다,"Memutuskan, menentukan"
+결심하다,Memutuskan, menentukan
 실천하다,Menerapkan
 성공하다,Sukses
 실수,Kesalahan
@@ -2773,19 +2783,19 @@
 구멍을 뚫다,Melubangi
 원목,Papan kayu (Sirap)
 익다,Terbiasa
-속상하다,"Jengkel, Kesal"
+속상하다,Jengkel, Kesal
 재단,Mengukur
-금방,"Segera, baru saja"
+금방,Segera, baru saja
 재단하다,Mengukur
 홈,Alur
-"연마하다, 샌딩하다",Menghaluskan
+연마하다, 샌딩하다,Menghaluskan
 사포질하다,Mengamplas
 도장하다,Melapisi
 도색하다,Mengecat
 줄자,Meteran
 직각자,Penggaris siku
 수평대,Pengukur kedataran
-칭찬,"Penghargaan, pujian"
+칭찬,Penghargaan, pujian
 기타,Dan lain-lain
 존경하다,Kerja yang bagus
 주문,Pesanan
@@ -2793,7 +2803,7 @@
 가공하다,Melubangi
 덕분에,Berkat
 잊다,Lupa
-착하다,"Baik hati, Ramah"
+착하다,Baik hati, Ramah
 건강하다,Sehat
 연락하다,Menghubungi
 ,
@@ -2806,7 +2816,7 @@
 기계,Mesin
 워낙,Sangat
 무겁다,Berat
-방심,"Ceroboh, payah"
+방심,Ceroboh, payah
 사고가 나다,Kecelakaan
 집중하다,Fokus
 특히,Khusus
@@ -2814,17 +2824,17 @@
 구부리다,Membengkokan
 찍어 내다,Mencetak
 선반 기계,Mesin Bubut
-갈다,"Mengasah, Menghaluskan"
+갈다,Mengasah, Menghaluskan
 도려내다,Memotong
 파내다,Memahat
-밀링 기계,"Mesin Penggilingan, Mesin Milling"
+밀링 기계,Mesin Penggilingan, Mesin Milling
 깎다,Memangkas
 절단하다,Memotong
 불꽃을 튀다,Percikan api
 움직이다,Bergerak
 가만히 있다,Diam
 얼음,Es Batu
-진정 시키다,"Membius, Mengompres"
+진정 시키다,Membius, Mengompres
 손가락이 잘리다,Jarinya terpotong
 끼이다,Terjepit
 베이다,Tergores
@@ -2857,7 +2867,7 @@
 손잡이,Pegangan
 강하게 움켜쥐다,Menggenggam dengan Kuat
 바람,Angin
-방향 접근하다,"Arah, Mendekat"
+방향 접근하다,Arah, Mendekat
 아래로,Bawah
 소화,Api
 소화하다,Memadamkan
@@ -2871,7 +2881,7 @@
 모두,Semua
 착용하다,Memakai
 안전모,Helm pengaman
-"쓰다, 끼다, 신다",Memakai
+쓰다, 끼다, 신다,Memakai
 안전장갑,Sarung tangan pengaman
 끈,Tali
 조이다,Mengencangkan
@@ -2892,14 +2902,14 @@
 빼다,Melepas
 얼른,Secepatnya
 파편이 튀다,Terkena serpihan besi
-"부딪하다, 출동하다",Tabrakan
+부딪하다, 출동하다,Tabrakan
 넘어지다,Jatuh
 미끄러지다,Terpeleset
-"떨어지다, 추락하다",Jatuh dari ketinggian
+떨어지다, 추락하다,Jatuh dari ketinggian
 구덩이에 빠지다,Jatuh ke lubang
 맞다,Terkena
 감전되다,Kesetrum
-"가스가 새다, 누출되다",Kebocoran gas
+가스가 새다, 누출되다,Kebocoran gas
 폭발하다,Meledak
 불이 나다,Kebakaran
 주의하다,Waspada
@@ -2908,7 +2918,7 @@
 빛,Sinar
 호흡기,Alat pernafasan
 분진,Debu
-물체,"Benda, barang"
+물체,Benda, barang
 전신,Seluruh tubuh
 방사선,Radiasi
 날카롭다,Tajam
@@ -2954,7 +2964,7 @@
 정기적,Teratur
 안색,Raut wajah
 야근하다,Lembur
-틈틈히,"Sesekali, berkala"
+틈틈히,Sesekali, berkala
 입맛,Nafsu makan
 챙기다,Menjaga
 해치다,Merusak
@@ -3008,7 +3018,7 @@
 자세히,Dengan jelas
 한국어능력시험,Ujian EPSTopik
 기출문제를 풀다,Menyelesaikan Try out
-문제,"Pertanyaan, Soal"
+문제,Pertanyaan, Soal
 각각,Masing-masing
 점,Nilai
 만점 기준,Total Nilai
@@ -3029,7 +3039,7 @@
 냉동창고업,Pekerjaan gudang penyimpanan
 재쟁용 재료수집 및 판매업,Pengumpulan dan penjualan benda daur ulang
 신문공고,Iklan koran
-참고하다,"Merujuk, Mengacu"
+참고하다,Merujuk, Mengacu
 구하다,Mencari
 인력난,Ketenagakerjaan
 겪다,Mengalami
@@ -3049,7 +3059,7 @@
 선발과정,Pilihan
 공정성.특정성,Jujur dan terbuka
 조기 적응 유도,Pengendalian adaptasi lebih awal
-"이상 ,이하","Atas, Bawah"
+이상 ,이하,Atas, Bawah
 금고형,Penjara
 범죄 경령,Pelanggaran hukum
 과거,Masa lalu
@@ -3084,13 +3094,13 @@
 근무지,Lokasi kerja
 정하다,Menentukan
 일단,Saat itu
-알려 주다,"Mengajari, memberi tahu"
+알려 주다,Mengajari, memberi tahu
 면접을 보다,Wawancara kerja
 사업주,Pemilik perusahaan
 취업자,Pekerja
 고용하다,Mempekerjakan
 취업하다,Bekerja
-"사인하다, 서명하다",Menandatangani
+사인하다, 서명하다,Menandatangani
 근무하다,Bekerja
 업체 명,Nama perusahaan
 퇴직하다,Berhenti kerja
@@ -3106,7 +3116,7 @@
 예방하다,Mencegah
 권익,Hak
 보호하다,Melindungi
-위하다,"Untuk, Bagi"
+위하다,Untuk, Bagi
 서식,Format
 상호,Saling
 담다,Membahas
@@ -3115,10 +3125,10 @@
 설정하다,Mengatur
 대로,Menurut
 기재하다,Berdasarkan
-생략,"Menyingkat, Menyesuaikan"
+생략,Menyingkat, Menyesuaikan
 최저임금,Gaji pokok (UMR)
-높다,"Naik, tinggi"
-항목,"Detail, Mengenai"
+높다,Naik, tinggi
+항목,Detail, Mengenai
 제공하다,Menyediakan
 비용,Biaya
 부담하다,Menanggung
@@ -3135,7 +3145,7 @@
 ,
 입국 신고서,Surat laporan masuk
 예정,Keputusan
-"증, 비자",Visa
+증, 비자,Visa
 유효 기간,Masa kadaluarsa
 발급,Penerbitan
 통역,Penerjemahan
@@ -3158,7 +3168,7 @@
 수수료,Biaya
 만료되다,Kadaluarsa
 갱신하다,Memperbarui
-사실,"Kenyataan, fakta, Sebenarnya"
+사실,Kenyataan, fakta, Sebenarnya
 사본,Fotocopy
 번호표를 뽑다,Mengambil nomor antrian
 지문을 등록하다,Mendaftarkan sidik jari
@@ -3174,12 +3184,12 @@
 국제법상,Hukum internasional
 대상,Anggota
 상실하다,Kehilangan
-취득하다,"Memperoleh, mendapat"
+취득하다,Memperoleh, mendapat
 출생하다,Lahir
 반드시,Harus
 변경하다,Pindah
 허가,Ijin
-출장소,"Kantor cabang, kantor dinas"
+출장소,Kantor cabang, kantor dinas
 서류,Dokumen
 비전문 취업,Kerja nonprofessional
 ,
@@ -3190,7 +3200,7 @@
 업무 상 재해,Kecelakaan kerja
 질병,Sakit parah
 그렇구나,Begitu
-"보험료를 내다, 납입하다",Membayar biaya asuransi
+보험료를 내다, 납입하다,Membayar biaya asuransi
 상해,Kecelakaan
 장해,Cacat
 사망,Kematian (Nomina)
@@ -3205,9 +3215,9 @@
 사고 나다,Kecelakaan
 다행이다,Syukurlah
 진료 기록,Laporan medis
-작성,"Mendata, Mengisi"
+작성,Mendata, Mengisi
 진단서,Surat diagnosa
-보험금을 청구하다,"Menagih, Mengklaim asuransi"
+보험금을 청구하다,Menagih, Mengklaim asuransi
 지급 심사를 받다,Menerima pemeriksaan pembayaran
 보험금을 지급하다,Membayar asuransi
 보험금을 타다,Menerima klaim asuransi
@@ -3215,7 +3225,7 @@
 영수증,Nota
 내역서,Surat perincian
 병원비,Biaya rumah sakit
-"치료비, 요양비",Biaya perawatan
+치료비, 요양비,Biaya perawatan
 휴업 급여,Gaji sementara
 장해 보상금,Ganti rugi cacat
 도입 목적 근거,Tujuan pengenalan / Dasar
@@ -3252,7 +3262,7 @@
 근로감독과,Lembaga pengelola ketenagakerjaan
 평균,Standar
 전부,Keseluruhan
-청구하다,"Mengajukan, menagih"
+청구하다,Mengajukan, menagih
 장애,Cacat
 사망,Meninggal
 ,
@@ -3264,7 +3274,7 @@
 세금하다,Membayar pajak
 만큼,Sebanyak
 급여 명세서,Slip gaji
-"실수령액, 실제로",Total pendapatan / Sebenarnya
+실수령액, 실제로,Total pendapatan / Sebenarnya
 급여 내역,Detail gaji
 기본급,Gaji pokok
 세금,Pajak
@@ -3661,4 +3671,5 @@
 전과,Keseluruhan
 의심되다,Meragukan
 증상,Gejala penyakit
+
 인근,Tetangga terdekat
