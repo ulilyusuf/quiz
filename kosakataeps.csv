@@ -758,13 +758,13 @@
 확인하다,Memeriksa
 알다,Mengetahui
 바쁘다,Sibuk
-귀엽다,Imut, lucu
+귀엽다,Imut/lucu
 편리하다,Nyaman
-회원 가입,Mendaftar akun, anggota
+회원 가입,Mendaftar akun
 대부분,Sebagian besar
 외국인등록번호,Nomor ID
 검색 엔진,Mesin pencarian
-회원 탈퇴,Menghapus akun, anggota
+회원 탈퇴,Menghapus akun
 아이디,ID
 비밀번호,Password
 화상 채팅,Chatting dengan video
@@ -773,7 +773,8 @@
 체류 신고,Pelaporan ijin tinggal
 전화번호 안내,Informasi nomor telepon
 고용노동부 고객상담센터,Pusat konsultasi nasabah tenaga kerja asing
-화재, 응급 환자 발생 신고,Pelaporan kondisi darurat dan kebakaran
+화재,Kebakaran
+응급 환자 발생 신고,Pelaporan kondisi darurat dan kebakaran
 외국인력상담센터,Pusat konsultasi ketenagakerjaan asing
 기초 지방자치단체 각종 생활 민원 신고,Pelaporan catatan sipil
 이주여성 긴급지원 센터,Pusat bantuan darurat bagi WNA perempuan
@@ -799,7 +800,7 @@
 같이,Bersama
 쓸다,Menyapu
 먼지,Debu
-닦다,Mengelap, Mengepel
+닦다,Mengelap/mengepel
 깨끗하다,Bersih
 어지럽다,Berantakan
 정돈되어 있다,Tertata rapi
@@ -919,7 +920,9 @@
 풀리다,Membuka
 요즘,Akhir-akhir ini
 물어보다,Menanyakan
-새,새로,새로운,Baru
+새,Baru
+새로,Baru
+새로운,Baru
 어울리다,Cocok
 시계,Jam
 화분,Vas bunga
@@ -3684,6 +3687,7 @@
 증상,Gejala penyakit
 
 인근,Tetangga terdekat
+
 
 
 
