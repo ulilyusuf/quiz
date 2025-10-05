@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<style>
+body { font-family: sans-serif; background: #fffaf0; padding: 20px; }
+.question { margin-bottom: 20px; }
+button { padding: 10px 15px; border-radius: 8px; margin-top: 10px; }
+#timer { font-weight: bold; color: red; }
+</style>
+</head>
+<body>
+
+<h2>Sesi <span id="sesi"></span></h2>
+<div id="timer"></div>
+<hr>
+<div id="quiz">Memuat soal...</div>
+
+<button id="selesai" onclick="selesai()" style="display:none;">Selesai Sesi</button>
+
+<script>
+const csvURL = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv";
+let kosakata = [];
+let soal = [];
+let sesi = parseInt(localStorage.getItem('sesi')) || 1;
+let waktu = parseInt(localStorage.getItem('waktu_per_sesi')) * 60;
+let skor = 0;
+let index = 0;
+let jawabanSalah = [];
+
+document.getElementById('sesi').textContent = sesi;
+
+async function loadCSV(){
+  const res = await fetch(csvURL);
+  const text = await res.text();
+  kosakata = text.trim().split("\n").map(row => {
+    const [korean, arti] = row.split(",");
+    return {korean: korean.trim(), arti: arti.trim()};
+  });
+  buatSoal();
+  tampilSoal();
+  timer();
+}
+
+function acak(arr){ return arr.sort(() => Math.random() - 0.5); }
+
+function buatSoal(){
+  soal = acak([...kosakata]).slice(0,10).map(item => {
+    let opsi = [item.arti];
+    while(opsi.length < 3){
+      let rand = kosakata[Math.floor(Math.random()*kosakata.length)].arti;
+      if(!opsi.includes(rand)) opsi.push(rand);
+    }
+    opsi = acak(opsi);
+    return { q: item.korean, opsi: opsi, correct: item.arti };
+  });
+}
+
+function tampilSoal(){
+  if(index >= soal.length){ document.getElementById('selesai').style.display='block'; return; }
+  let s = soal[index];
+  document.getElementById('quiz').innerHTML = `
+    <div class='question'>
+      <p>${index+1}. Apa arti dari <b>${s.q}</b>?</p>
+      ${s.opsi.map(o=>`<button onclick="jawab('${o}')">${o}</button>`).join("<br>")}
+    </div>
+  `;
+}
+
+function jawab(pilihan){
+  let s = soal[index];
+  if(pilihan === s.correct){
+    skor++;
+  } else {
+    jawabanSalah.push({no:index+1, soal:s.q, jawaban:s.correct});
+  }
+  index++;
+  tampilSoal();
+}
+
+function timer(){
+  let t = setInterval(()=>{
+    waktu--;
+    document.getElementById('timer').textContent = "⏱️ " + waktu + " detik tersisa";
+    if(waktu <= 0){
+      clearInterval(t);
+      selesai();
+    }
+  }, 1000);
+}
+
+function selesai(){
+  localStorage.setItem('skor_sesi_'+sesi, skor);
+  localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah));
+
+  if(sesi < 10){
+    let lanjut = confirm("Sesi selesai. Lanjut ke sesi berikutnya?");
+    if(lanjut){
+      localStorage.setItem('sesi', sesi+1);
+      window.location.reload();
+    } else {
+      window.location.href = "result.html";
+    }
+  } else {
+    window.location.href = "result.html";
+  }
+}
+
+loadCSV();
+</script>
+</body>
+</html>

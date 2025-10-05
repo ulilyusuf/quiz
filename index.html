@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Splash - Quiz Korea</title>
+<style>
+body { font-family: sans-serif; text-align: center; background: #f0f8ff; padding: 30px; }
+h1 { color: #007acc; }
+input, button { padding: 10px; font-size: 16px; margin: 10px; border-radius: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Quiz Kosakata Korea</h1>
+<p>📝 Aturan:</p>
+<ul style="text-align:left; display:inline-block;">
+<li>1 sesi = 10 soal acak dari database</li>
+<li>Total 10 sesi</li>
+<li>Waktu per sesi diatur sendiri (menit)</li>
+<li>Jika waktu habis → otomatis tampil hasil</li>
+</ul>
+
+<p>Masukkan waktu per sesi (menit):</p>
+<input type="number" id="waktu" min="1" placeholder="Contoh: 5">
+<br>
+<button onclick="mulai()">Mulai Quiz</button>
+
+<script>
+function mulai(){
+  const menit = document.getElementById('waktu').value;
+  if(!menit || menit <= 0){
+    alert('Masukkan waktu yang valid!');
+    return;
+  }
+  localStorage.setItem('waktu_per_sesi', menit);
+  localStorage.setItem('sesi', 1);
+  window.location.href = "quiz.html";
+}
+</script>
+</body>
+</html>
