@@ -116,13 +116,29 @@ function timer(){
   let t = setInterval(()=>{
     waktu--;
     document.getElementById('timer').textContent = "⏱️ " + waktu + " detik tersisa";
-    if(waktu <= 0){
+
+    if (waktu <= 0) {
       clearInterval(t);
-      selesai();
+      waktuHabis(); // panggil fungsi khusus waktu habis
     }
   }, 1000);
 }
 
+// 🔹 Fungsi baru: waktu habis
+function waktuHabis(){
+  alert("⏰ Waktu habis!");
+
+  // Simpan hasil sementara
+  localStorage.setItem('skor_sesi_'+sesi, skor);
+  localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah));
+
+  // Pastikan tidak lanjut ke soal berikutnya
+  document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+
+  // Arahkan langsung ke halaman hasil
+  window.location.href = "https://ulilyusuf.github.io/quiz/result.html";
+  }
+  
 function lanjutSesi(){
   localStorage.setItem('skor_sesi_'+sesi, skor);
   localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah));
