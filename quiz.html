@@ -76,39 +76,6 @@ function buatSoal(){
 }
 
 function tampilSoal(){
-  if(index >= soal.length){ document.getElementById('selesai').style.display='block'; return; }
-  let s = soal[index];
-  document.getElementById('quiz').innerHTML = `
-    <div class='question'>
-      <p>${index+1}. Apa arti dari <b>${s.q}</b>?</p>
-      ${s.opsi.map(o=>`<button onclick="jawab('${o}')">${o}</button>`).join("<br>")}
-    </div>
-  `;
-}
-
-function jawab(pilihan){
-  let s = soal[index];
-  if(pilihan === s.correct){
-    skor++;
-  } else {
-    jawabanSalah.push({no:index+1, soal:s.q, jawaban:s.correct});
-  }
-  index++;
-  tampilSoal();
-}
-
-function timer(){
-  let t = setInterval(()=>{
-    waktu--;
-    document.getElementById('timer').textContent = "⏱️ " + waktu + " detik tersisa";
-    if(waktu <= 0){
-      clearInterval(t);
-      selesai();
-    }
-  }, 1000);
-}
-
-function tampilSoal(){
   if(index >= soal.length){
     // Jika semua soal sudah dijawab
     let tombolLanjut = "";
@@ -143,6 +110,17 @@ function jawab(pilihan){
   }
   index++;
   tampilSoal();
+}
+  
+function timer(){
+  let t = setInterval(()=>{
+    waktu--;
+    document.getElementById('timer').textContent = "⏱️ " + waktu + " detik tersisa";
+    if(waktu <= 0){
+      clearInterval(t);
+      selesai();
+    }
+  }, 1000);
 }
 
 function lanjutSesi(){
