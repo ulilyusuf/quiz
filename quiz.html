@@ -49,7 +49,7 @@ button {
   z-index:999;
 ">
   ⏰ Waktu habis!<br>
-  <button onclick="keHasil()" style="
+  <button onclick="lihatHasil()" style="
     background:#ff6666;
     border:none;
     color:white;
@@ -159,11 +159,6 @@ function waktuHabis(){
   // Tampilkan popup custom (tanpa alert browser)
   document.getElementById("popupWaktuHabis").style.display = "block";
 }
-
-// Tombol di popup
-function keHasil(){
-  window.location.href = "https://ulilyusuf.github.io/quiz/result.html";
-                      }
   
 function lihatHasil(){
   // Simpan hasil terakhir dulu
