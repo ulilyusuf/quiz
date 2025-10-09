@@ -34,9 +34,8 @@ button {
 <h2>Sesi <span id="sesi"></span></h2>
 <div id="timer"></div>
 <hr>
-<div id="quiz">Memuat soal...</div>
-<button id="selesai" onclick="selesai()" style="display:none;">Selesai Sesi</button>
-<!-- 🔹 Popup custom waktu habis -->
+<div id="quiz">Memuat soal . . .</div>
+  <!-- 🔹 Popup custom waktu habis -->
 <div id="popupWaktuHabis" style="
   display:none;
   position:fixed;
@@ -60,6 +59,8 @@ button {
     margin-top:20px;
   ">Lihat Hasil</button>
 </div>
+<button id="selesai" onclick="selesai()" style="display:none;">Selesai Sesi</button>
+
 <script>
 const csvURL = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv";
 let kosakata = [];
@@ -146,10 +147,8 @@ function timer(){
     }
   }, 1000);
 }
-
-  function waktuHabis(){
-  // Nonaktifkan semua tombol quiz
-  document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+  
+function waktuHabis(){
 
   // Simpan hasil sesi ke localStorage
   localStorage.setItem('skor_sesi_'+sesi, skor);
@@ -157,15 +156,10 @@ function timer(){
 
   // Tampilkan popup custom (tanpa alert browser)
   document.getElementById("popupWaktuHabis").style.display = "block";
+}
 
 // Tombol di popup
 function keHasil(){
-  window.location.href = "https://ulilyusuf.github.io/quiz/result.html";
-}
-function lihatHasil(){
-  // Simpan hasil terakhir dulu
-  localStorage.setItem('skor_sesi_'+sesi, skor);
-  localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah));
   window.location.href = "https://ulilyusuf.github.io/quiz/result.html";
 }
 
