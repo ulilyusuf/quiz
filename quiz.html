@@ -35,6 +35,7 @@ button {
 <div id="timer"></div>
 <hr>
 <div id="quiz">Memuat soal...</div>
+<button id="selesai" onclick="selesai()" style="display:none;">Selesai Sesi</button>
 <!-- 🔹 Popup custom waktu habis -->
 <div id="popupWaktuHabis" style="
   display:none;
@@ -49,10 +50,16 @@ button {
   z-index:999;
 ">
   ⏰ Waktu habis!<br>
-  <button onclick="lihatHasil()">Lihat Hasil</button>
+  <button onclick="keHasil()" style="
+    background:#ff6666;
+    border:none;
+    color:white;
+    padding:10px 20px;
+    font-size:20px;
+    border-radius:10px;
+    margin-top:20px;
+  ">Lihat Hasil</button>
 </div>
-<button id="selesai" onclick="selesai()" style="display:none;">Selesai Sesi</button>
-
 <script>
 const csvURL = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv";
 let kosakata = [];
@@ -140,7 +147,7 @@ function timer(){
   }, 1000);
 }
 
-function waktuHabis(){
+  function waktuHabis(){
   // Nonaktifkan semua tombol quiz
   document.querySelectorAll("button").forEach(btn => btn.disabled = true);
 
@@ -150,8 +157,11 @@ function waktuHabis(){
 
   // Tampilkan popup custom (tanpa alert browser)
   document.getElementById("popupWaktuHabis").style.display = "block";
+
+// Tombol di popup
+function keHasil(){
+  window.location.href = "https://ulilyusuf.github.io/quiz/result.html";
 }
-  
 function lihatHasil(){
   // Simpan hasil terakhir dulu
   localStorage.setItem('skor_sesi_'+sesi, skor);
