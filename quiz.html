@@ -132,13 +132,6 @@ function tampilSoal(){
   `;
 }
 
-function lanjutSesi(){
-  localStorage.setItem('skor_sesi_'+sesi, skor);
-  localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah))}
- let sesi < 10
-    localStorage.setItem('sesi', sesi+1);
-    window.location.reload(); // mulai sesi berikutnya
-  
 function jawab(pilihan){
   let s = soal[index];
   if(pilihan === s.correct){
