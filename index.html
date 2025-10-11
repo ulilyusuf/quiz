@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
 <title>Quiz Kosakata Korea</title>
 <style>
-body { font-family: sans-serif; text-align: center; background: #f0f8ff; padding: 30px; }
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f8ff;
+  padding: 30px;
+}
 h1 { color: #007acc; }
-input, button { padding: 10px; font-size: 22px; margin: 10px; border-radius: 8px; }
+input, button {
+  padding: 10px;
+  font-size: 22px;
+  margin: 10px;
+  border-radius: 8px;
+}
+label { font-size: 20px; }
 </style>
 </head>
 <body>
@@ -14,11 +26,15 @@ input, button { padding: 10px; font-size: 22px; margin: 10px; border-radius: 8px
 <h1>Quiz Kosakata Korea</h1>
 <p>📝 Aturan :</p>
 <ul style="text-align:left; display:inline-block;">
-<li>10 Soal / sesi</li>
-<li>Total 10 sesi</li>
+  <li>10 Soal / sesi</li>
+  <li>Total 10 sesi</li>
 </ul>
 
-<p>Masukkan waktu per sesi (menit) :</p>
+<p>Pilih jenis kosakata:</p>
+<label><input type="radio" name="tipe" value="eps" checked> KOSAKATA EPS-TOPIK</label><br>
+<label><input type="radio" name="tipe" value="topik2"> KOSAKATA TOPIK II</label>
+
+<p>Masukkan waktu per sesi (menit):</p>
 <input type="number" id="waktu" min="1" placeholder="Contoh: 5">
 <br>
 <button onclick="mulai()">Mulai Quiz</button>
@@ -26,12 +42,19 @@ input, button { padding: 10px; font-size: 22px; margin: 10px; border-radius: 8px
 <script>
 function mulai(){
   const menit = document.getElementById('waktu').value;
+  const tipe = document.querySelector('input[name="tipe"]:checked').value;
+
   if(!menit || menit <= 0){
     alert('Masukkan waktu yang valid!');
     return;
   }
+
+  // Simpan pilihan waktu dan tipe soal
   localStorage.setItem('waktu_per_sesi', menit);
   localStorage.setItem('sesi', 1);
+  localStorage.setItem('tipe_soal', tipe);
+
+  // Pindah ke halaman quiz
   window.location.href = "https://ulilyusuf.github.io/quiz/quiz.html";
 }
 </script>
