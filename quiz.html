@@ -62,7 +62,14 @@ button {
 <button id="selesai" onclick="selesai()" style="display:none;">Selesai Sesi</button>
 
 <script>
-const csvURL = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv";
+let tipe = localStorage.getItem('tipe_soal') || 'eps';
+let csvURL = "";
+
+if (tipe === "eps") {
+  csvURL = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakataeps.csv";
+} else if (tipe === "topik2") {
+  csvURL = "https://raw.githubusercontent.com/ulilyusuf/quiz/refs/heads/main/kosakatatopik2.csv";
+}
 let kosakata = [];
 let soal = [];
 let sesi = parseInt(localStorage.getItem('sesi')) || 1;
