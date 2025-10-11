@@ -135,12 +135,9 @@ function tampilSoal(){
 function lanjutSesi(){
   localStorage.setItem('skor_sesi_'+sesi, skor);
   localStorage.setItem('salah_sesi_'+sesi, JSON.stringify(jawabanSalah))}
-  if(sesi < 10){
+ let sesi < 10
     localStorage.setItem('sesi', sesi+1);
     window.location.reload(); // mulai sesi berikutnya
-  } else {
-    window.location.href = "https://ulilyusuf.github.io/quiz/result.html";
-}
   
 function jawab(pilihan){
   let s = soal[index];
